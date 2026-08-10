@@ -51,10 +51,11 @@ commit with `ALLOW_UNVERIFIED_AUTHOR=1`.
 
 ## Data snapshots (build-time)
 
-Published engine-index and minigame-terms JSON live in the **private** repo [`myblackbeanca/anygame-data`](https://github.com/myblackbeanca/anygame-data). Before every production build, `scripts/fetch-snapshots.sh` fetches via the GitHub Contents API (requires `GITHUB_TOKEN` configured in CI/Vercel):
+Published engine-index and minigame-terms JSON live in the **private** repo [`myblackbeanca/anygame-data-private`](https://github.com/myblackbeanca/anygame-data-private). Before every production build, `scripts/fetch-snapshots.sh` fetches via the GitHub Contents API (requires `GITHUB_TOKEN` configured in CI/Vercel):
 
 - `…/engine-index/engine-index-latest.json` → `client/public/data/engine-index-latest.json`
 - `…/minigame-terms/minigame-terms.json` → `client/public/data/minigame-terms.json`
+- `…/kaggle/*` → `client/public/data/kaggle-*.json` (7 summaries + insights)
 
 If the fetch fails, committed fallbacks in `client/public/data/` are kept (build still succeeds). Panel ops/schemas are **not** here — private [`collectivewinca/anygame-panel`](https://github.com/collectivewinca/anygame-panel).
 
