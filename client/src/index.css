@@ -361,21 +361,30 @@
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 14px;
-    padding: 20px 20px 14px;
-    margin: 28px 0;
+    padding: 14px 14px 12px;
+    margin: 20px 0;
     color: var(--ink);
+    min-width: 0;
+    overflow: hidden;
   }
-  .fig svg { width: 100%; height: auto; display: block; }
+  @media (min-width: 640px) {
+    .fig {
+      padding: 20px 20px 14px;
+      margin: 28px 0;
+    }
+  }
+  .fig svg { width: 100%; height: auto; display: block; max-width: 100%; }
   .fig figcaption {
-    font-size: 13.5px;
+    font-size: 13px;
     color: var(--muted);
     text-align: center;
-    margin: 10px auto 4px;
+    margin: 12px auto 4px;
     max-width: 560px;
     line-height: 1.5;
+    padding: 0 4px;
   }
-  .fig.bare { background: none; border: none; padding: 0; }
-  .fig.wide { overflow-x: auto; }
+  .fig.bare { background: none; border: none; padding: 0; overflow: visible; }
+  .fig.wide { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .fig.wide svg { min-width: 640px; }
   /* non-scaling-stroke pins guide widths to device px at any scale */
   .fig .guide { vector-effect: non-scaling-stroke; }
