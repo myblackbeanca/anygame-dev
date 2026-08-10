@@ -62,46 +62,62 @@ function prettyKey(k: string): string {
 
 function fmtNumber(v: number, key = ""): string {
   const k = key.toLowerCase();
-  if (k.includes("ratio") || k.includes("pct") || (v > 0 && v <= 1 && !Number.isInteger(v))) {
-    return `${(v <= 1 ? v * 100 : v).toFixed(v <= 1 ? 1 : 0)}%`;
+  const asRatio =
+    k.includes("ratio") ||
+    k.includes("pct") ||
+    // bare 0–1 fractions only when the key signals a share/rate
+    ((k.includes("mean") || k.includes("share") || k.includes("positive")) &&
+      v > 0 &&
+      v <= 1 &&
+      !Number.isInteger(v));
+  if (asRatio) {
+    const pct = v <= 1 ? v * 100 : v;
+    return `${pct.toFixed(pct < 10 || !Number.isInteger(pct) ? 1 : 0)}%`;
   }
   if (Math.abs(v) >= 1000) return v.toLocaleString(undefined, { maximumFractionDigits: 0 });
   if (!Number.isInteger(v)) return v.toFixed(Math.abs(v) < 10 ? 2 : 1);
   return v.toString();
 }
 
+/** Format already-percent values (e.g. 53.1 → "53.1%") without double-scaling. */
+function fmtPercentPoints(v: number): string {
+  if (v > 0 && v <= 1) return `${(v * 100).toFixed(1)}%`;
+  const rounded = Number.isInteger(v) ? String(v) : v.toFixed(1);
+  return `${rounded}%`;
+}
+
 /** Strip Python/JSON dumps from findings so the page never shows code. */
 function cleanProse(text: string): string {
   if (!text) return "";
   let t = text;
-  // Drop list-of-tuples dumps: [('a', 1.0), ...]
+  // Drop list-of-tuples dumps, with optional "Top examples:" prefix
   t = t.replace(
-    /(?:Top\s+(?:examples?|openings?|\d+)[^:.]*:\s*)?\[(?:\([^\]]*\)(?:,\s*)?)+\]\.?/gi,
+    /\s*(?:Top\s+(?:examples?|openings?|\d+)[^:.]*:\s*)?\[(?:\([^\]]*\)(?:,\s*)?)+\]\.?/gi,
     "",
   );
-  // Drop whole "Label: {dict dump}" clauses
-  t = t.replace(
-    /(?:^|[.!]\s+)[^.{]{0,80}:\s*\{[^}]{8,}\}\.?/g,
-    (m) => (m.trimStart().startsWith(".") || m.trimStart().startsWith("!") ? m[0] : ""),
-  );
-  // Drop leftover bare dicts / tuples
-  t = t.replace(/\{[^}]{8,}\}/g, "");
+  // Drop "{'a': 1, ...}" dumps (with or without a leading label:)
+  t = t.replace(/\s*\{['"][^}]{8,}\}/g, "");
+  t = t.replace(/:\s*\{[^}]{8,}\}/g, "");
+  // Drop leftover bare tuples
   t = t.replace(/\(\s*'[^']+'\s*,\s*[\d.]+\s*\)/g, "");
   t = t.replace(/\[\s*,?\s*\]/g, "");
   // Tidy punctuation left behind
   t = t.replace(/\s{2,}/g, " ");
-  t = t.replace(/\s+([.,;:])/g, "$1");
-  t = t.replace(/:{2,}/g, ":");
+  t = t.replace(/\s+([.,;])/g, "$1");
   t = t.replace(/\.{2,}/g, ".");
-  t = t.replace(/:\s*\./g, ".");
-  t = t.replace(/^\s*[,:;.]\s*/g, "");
+  t = t.replace(/:\s*([.])/g, "$1");
+  t = t.replace(/^\s*[,;.\s]+/, "");
   t = t.replace(/:\s*$/g, ".");
-  // If a sentence now starts mid-clause after a colon remnant, drop the stub
-  t = t.replace(/^[A-Za-z][^.]{0,60}:\s+(?=[A-Z])/g, "");
+  // "Label: Full sentence..." after dump strip → keep the sentence only
+  // when remainder looks like prose (4+ lowercase words), not "A, B, C" lists
+  t = t.replace(
+    /^[A-Za-z][^:]{0,80}:\s+(?=[A-Z][a-z]+(?:\s+[a-z']+){3,})/g,
+    "",
+  );
   t = t.trim();
-  // Label-only leftovers after stripping dumps aren't useful prose
-  if (t.length > 0 && t.length < 48 && !/[.!?]$/.test(t)) return "";
-  if (/^[A-Za-z][\w\s/%$+-]{0,40}\.?$/.test(t) && t.split(" ").length <= 7) return "";
+  // If stripping left only a short label stub, drop it
+  if (t.length > 0 && t.length < 36 && /:$/.test(t)) return "";
+  if (/^[A-Za-z][\w\s/%$+-]{0,30}\.?$/.test(t) && t.split(" ").length <= 5) return "";
   return t;
 }
 
@@ -347,8 +363,9 @@ function InsightData({
             if (sectionKey === "tag_based_opportunity") return fmtNumber(v, "ratio");
             if (sectionKey === "early_access_impact" && label.toLowerCase().includes("ratio"))
               return fmtNumber(v, "ratio");
+            // Price buckets + platforms are already percent points (53.1, 100)
             if (sectionKey === "pricing_strategy" || sectionKey === "platform_targeting")
-              return `${fmtNumber(v)}%`;
+              return fmtPercentPoints(v);
             return fmtNumber(v, label);
           }}
         />
