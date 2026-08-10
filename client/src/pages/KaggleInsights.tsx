@@ -79,11 +79,12 @@ function fmtNumber(v: number, key = ""): string {
   return v.toString();
 }
 
-/** Format already-percent values (e.g. 53.1 → "53.1%") without double-scaling. */
+/** Format already-percent-point values (53.1, 0.6) — never rescale. */
 function fmtPercentPoints(v: number): string {
-  if (v > 0 && v <= 1) return `${(v * 100).toFixed(1)}%`;
-  const rounded = Number.isInteger(v) ? String(v) : v.toFixed(1);
-  return `${rounded}%`;
+  if (Number.isInteger(v)) return `${v}%`;
+  // Keep one decimal for small shares like 0.6
+  const decimals = Math.abs(v) < 10 ? 1 : 1;
+  return `${v.toFixed(decimals)}%`;
 }
 
 /** Strip Python/JSON dumps from findings so the page never shows code. */
