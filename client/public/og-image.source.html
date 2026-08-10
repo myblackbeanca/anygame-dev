@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1200, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        margin: 0;
+        overflow: hidden;
+      }
+      body {
+        background: #ffffff;
+        color: #1b1a24;
+      }
+      .og {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        background: #ffffff;
+      }
+      .frame {
+        position: absolute;
+        inset: 48px 52px;
+        border: 1px solid #dedde2;
+      }
+      .split {
+        position: absolute;
+        left: 712px;
+        top: 48px;
+        width: 1px;
+        height: 430px;
+        background: #dedde2;
+      }
+      .wordmark {
+        position: absolute;
+        left: 72px;
+        top: 70px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font:
+          800 24px/1 Syne,
+          Arial,
+          sans-serif;
+      }
+      .wordmark strong {
+        color: #5844d8;
+      }
+      .mini-mark {
+        width: 44px;
+        height: 44px;
+      }
+      .copy {
+        position: absolute;
+        left: 72px;
+        top: 145px;
+        width: 600px;
+      }
+      .eyebrow {
+        color: #5844d8;
+        font:
+          700 16px/1 "JetBrains Mono",
+          Menlo,
+          monospace;
+      }
+      h1 {
+        margin: 76px 0 0;
+        font:
+          800 76px/1.01 Syne,
+          Arial,
+          sans-serif;
+        letter-spacing: 0;
+      }
+      .sub {
+        margin-top: 34px;
+        font:
+          600 27px/1.2 Inter,
+          Arial,
+          sans-serif;
+      }
+      .hero-mark {
+        position: absolute;
+        left: 784px;
+        top: 98px;
+        width: 320px;
+        height: 320px;
+      }
+      .mark-label {
+        position: absolute;
+        left: 835px;
+        top: 429px;
+        color: #5844d8;
+        font:
+          700 12px/1 "JetBrains Mono",
+          Menlo,
+          monospace;
+      }
+      .query {
+        position: absolute;
+        left: 52px;
+        top: 478px;
+        width: 1096px;
+        height: 104px;
+        border: 1px solid #dedde2;
+        border-left: 7px solid #5844d8;
+        background: #f7f6fb;
+      }
+      .query-label {
+        position: absolute;
+        left: 23px;
+        top: 26px;
+        color: #5844d8;
+        font:
+          700 12px/1 "JetBrains Mono",
+          Menlo,
+          monospace;
+      }
+      .prompt {
+        position: absolute;
+        left: 23px;
+        top: 58px;
+        font:
+          400 18px/1 "JetBrains Mono",
+          Menlo,
+          monospace;
+      }
+      .tagline {
+        position: absolute;
+        left: 659px;
+        top: 25px;
+        font:
+          700 23px/1.1 Syne,
+          Arial,
+          sans-serif;
+      }
+      .tagline span {
+        display: block;
+        margin-top: 4px;
+        color: #5844d8;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="og" aria-label="anygame.dev social preview">
+      <div class="frame"></div>
+      <div class="split"></div>
+      <div class="wordmark">
+        <svg class="mini-mark" viewBox="0 0 44 44" aria-hidden="true">
+          <circle
+            cx="22"
+            cy="22"
+            r="20"
+            fill="#fff"
+            stroke="#1b1a24"
+            stroke-width="1.5"
+          />
+          <g fill="none" stroke-linecap="round" stroke-width="2.6">
+            <line x1="10" y1="29" x2="34" y2="14" stroke="#e56d55" />
+            <line x1="12" y1="12" x2="32" y2="33" stroke="#378eaa" />
+            <line x1="8" y1="19" x2="37" y2="23" stroke="#c1a43b" />
+            <line x1="18" y1="8" x2="22" y2="37" stroke="#3f9f78" />
+            <line x1="27" y1="9" x2="15" y2="35" stroke="#1b1a24" />
+            <line x1="29" y1="11" x2="40" y2="6" stroke="#5844d8" />
+          </g>
+        </svg>
+        <span>anygame<strong>.dev</strong></span>
+      </div>
+
+      <section class="copy">
+        <div class="eyebrow">RESEARCH ATLAS / 2026</div>
+        <h1>The New<br />Engine</h1>
+        <div class="sub">AI in game development.</div>
+      </section>
+
+      <svg class="hero-mark" viewBox="0 0 320 320" aria-hidden="true">
+        <circle
+          cx="140"
+          cy="168"
+          r="136"
+          fill="#f7f6fb"
+          stroke="#1b1a24"
+          stroke-width="3"
+        />
+        <g fill="none" stroke-linecap="round" stroke-width="13">
+          <line x1="51" y1="220" x2="223" y2="113" stroke="#e56d55" />
+          <line x1="70" y1="94" x2="212" y2="241" stroke="#378eaa" />
+          <line x1="34" y1="147" x2="245" y2="176" stroke="#c1a43b" />
+          <line x1="111" y1="68" x2="139" y2="271" stroke="#3f9f78" />
+          <line x1="178" y1="72" x2="94" y2="263" stroke="#1b1a24" />
+          <line x1="191" y1="86" x2="307" y2="32" stroke="#5844d8" />
+        </g>
+        <circle cx="307" cy="32" r="9" fill="#5844d8" />
+      </svg>
+      <div class="mark-label">PULL THE RIGHT SIGNAL</div>
+
+      <section class="query">
+        <div class="query-label">QUERY / BUILD 05</div>
+        <div class="prompt">&gt; where should builders move next?</div>
+        <div class="tagline">
+          Pull the right stick.<span>Ship the next build.</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

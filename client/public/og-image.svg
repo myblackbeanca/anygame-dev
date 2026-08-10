@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <g stroke="#dedde2" stroke-width="1">
+    <line x1="52" y1="48" x2="1148" y2="48"/>
+    <line x1="52" y1="582" x2="1148" y2="582"/>
+    <line x1="52" y1="48" x2="52" y2="582"/>
+    <line x1="1148" y1="48" x2="1148" y2="582"/>
+    <line x1="712" y1="48" x2="712" y2="478"/>
+  </g>
+
+  <g transform="translate(72 70)">
+    <circle cx="22" cy="22" r="20" fill="#ffffff" stroke="#1b1a24" stroke-width="1.5"/>
+    <g fill="none" stroke-linecap="round" stroke-width="2.6">
+      <line x1="10" y1="29" x2="34" y2="14" stroke="#e56d55"/>
+      <line x1="12" y1="12" x2="32" y2="33" stroke="#378eaa"/>
+      <line x1="8" y1="19" x2="37" y2="23" stroke="#c1a43b"/>
+      <line x1="18" y1="8" x2="22" y2="37" stroke="#3f9f78"/>
+      <line x1="27" y1="9" x2="15" y2="35" stroke="#1b1a24"/>
+      <line x1="29" y1="11" x2="40" y2="6" stroke="#5844d8"/>
+    </g>
+    <text x="56" y="29" font-family="Syne, Arial, sans-serif" font-size="24" font-weight="800" fill="#1b1a24">anygame<tspan fill="#5844d8">.dev</tspan></text>
+  </g>
+
+  <text x="72" y="158" font-family="'JetBrains Mono', Menlo, monospace" font-size="16" font-weight="700" fill="#5844d8">RESEARCH ATLAS / 2026</text>
+  <text x="72" y="246" font-family="Syne, Arial, sans-serif" font-size="76" font-weight="800" fill="#1b1a24">The New</text>
+  <text x="72" y="323" font-family="Syne, Arial, sans-serif" font-size="76" font-weight="800" fill="#1b1a24">Engine</text>
+  <text x="72" y="376" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="600" fill="#1b1a24">AI in game development.</text>
+
+  <g>
+    <circle cx="924" cy="266" r="136" fill="#f7f6fb" stroke="#1b1a24" stroke-width="3"/>
+    <g fill="none" stroke-linecap="round" stroke-width="13">
+      <line x1="835" y1="318" x2="1007" y2="211" stroke="#e56d55"/>
+      <line x1="854" y1="192" x2="996" y2="339" stroke="#378eaa"/>
+      <line x1="818" y1="245" x2="1029" y2="274" stroke="#c1a43b"/>
+      <line x1="895" y1="166" x2="923" y2="369" stroke="#3f9f78"/>
+      <line x1="962" y1="170" x2="878" y2="361" stroke="#1b1a24"/>
+      <line x1="975" y1="184" x2="1091" y2="130" stroke="#5844d8"/>
+    </g>
+    <circle cx="1091" cy="130" r="9" fill="#5844d8"/>
+    <text x="835" y="435" font-family="'JetBrains Mono', Menlo, monospace" font-size="12" font-weight="700" fill="#5844d8">PULL THE RIGHT SIGNAL</text>
+  </g>
+
+  <g>
+    <rect x="52" y="478" width="1096" height="104" fill="#f7f6fb" stroke="#dedde2"/>
+    <rect x="52" y="478" width="7" height="104" fill="#5844d8"/>
+    <text x="82" y="513" font-family="'JetBrains Mono', Menlo, monospace" font-size="12" font-weight="700" fill="#5844d8">QUERY / BUILD 05</text>
+    <text x="82" y="551" font-family="'JetBrains Mono', Menlo, monospace" font-size="18" fill="#1b1a24">&gt; where should builders move next?</text>
+    <text x="718" y="541" font-family="Syne, Arial, sans-serif" font-size="23" font-weight="700" fill="#1b1a24">Pull the right stick.</text>
+    <text x="718" y="566" font-family="Syne, Arial, sans-serif" font-size="23" font-weight="700" fill="#5844d8">Ship the next build.</text>
+  </g>
+</svg>

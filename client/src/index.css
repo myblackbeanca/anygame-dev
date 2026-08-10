@@ -1,3 +1,10 @@
+/* ============================================================
+   DESIGN SYSTEM: Editorial Intelligence — LIGHT THEME
+   Aesthetic: Long-form Editorial × Data Journalism
+   Palette: Off-white base, deep slate text, electric indigo accent
+   Typography: Syne (display) + Source Serif 4 (body) + JetBrains Mono (data)
+   ============================================================ */
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -23,7 +30,6 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
@@ -32,85 +38,88 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
+  --radius: 0.5rem;
+
+  /* Light editorial base — white canvas, electric indigo signal. */
+  --background: oklch(0.98 0.003 280); /* off-white canvas */
+  --foreground: oklch(0.18 0.02 270); /* deep slate text */
+  --card: oklch(1 0 0); /* white surface */
+  --card-foreground: oklch(0.18 0.02 270);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --popover-foreground: oklch(0.18 0.02 270);
+
+  --primary: oklch(0.48 0.22 275);
+  --primary-foreground: oklch(0.98 0 0);
+
+  --secondary: oklch(0.94 0.006 280);
+  --secondary-foreground: oklch(0.28 0.02 270);
+
+  --muted: oklch(0.95 0.005 280);
+  --muted-foreground: oklch(0.52 0.015 275);
+
+  --accent: oklch(0.48 0.22 275);
+  --accent-foreground: oklch(0.98 0 0);
+
+  --destructive: oklch(0.58 0.22 25);
+  --border: oklch(0.88 0.008 280); /* light hairline */
+  --input: oklch(0.92 0.006 280);
+  --ring: oklch(0.48 0.22 275);
+
+  /* Pick-up-sticks chart palette. Indigo is the active move. */
+  --chart-1: oklch(0.48 0.22 275); /* indigo */
+  --chart-2: oklch(0.7 0.18 35); /* coral */
+  --chart-3: oklch(0.78 0.14 160); /* teal */
+  --chart-4: oklch(0.72 0.14 85); /* gold */
+  --chart-5: oklch(0.68 0.13 225); /* blue */
+
+  /* Sidebar */
+  --sidebar: oklch(0.08 0.004 280);
+  --sidebar-foreground: oklch(0.97 0 0);
+  --sidebar-primary: oklch(0.48 0.22 275);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.16 0.006 280);
+  --sidebar-accent-foreground: oklch(0.97 0 0);
+  --sidebar-border: oklch(0.26 0.006 280);
+  --sidebar-ring: oklch(0.48 0.22 275);
+
+  /* here.now visual kit — hand-drawn SVG figures.
+     Maps OKLCH editorial palette to the kit's CSS custom properties. */
+  --ink: oklch(0.18 0.02 270);
+  --paper: oklch(0.98 0.003 280);
+  --card: oklch(1 0 0);
+  --line: oklch(0.88 0.008 280);
+  --muted: oklch(0.52 0.015 275);
+  --accent-soft: oklch(0.96 0.025 275);
+  --good: oklch(0.16 0.22 40);
+  --warn: oklch(0.55 0.14 30);
 }
 
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+/* Scoped light editorial palette shared by every public route. */
+.theme-light {
+  --background: oklch(0.98 0.003 280);
+  --foreground: oklch(0.18 0.02 270);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.02 270);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.02 270);
+  --primary: oklch(0.48 0.22 275);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.94 0.006 280);
+  --secondary-foreground: oklch(0.28 0.02 270);
+  --muted: oklch(0.95 0.005 280);
+  --muted-foreground: oklch(0.52 0.015 275);
+  --accent: oklch(0.48 0.22 275);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.58 0.22 25);
+  --border: oklch(0.88 0.008 280);
+  --input: oklch(0.92 0.006 280);
+  --ring: oklch(0.48 0.22 275);
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: clip;
 }
 
 @layer base {
@@ -119,59 +128,283 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+  }
+  ::selection {
+    background: oklch(0.48 0.22 275);
+    color: oklch(0.98 0 0);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Syne", "Inter", system-ui, sans-serif;
+    letter-spacing: 0;
+  }
+  .font-mono,
+  code,
+  pre {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
+  a[href] {
     @apply cursor-pointer;
   }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
-
   .flex {
     min-height: 0;
     min-width: 0;
   }
-
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      max-width: 1400px;
     }
   }
 
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+  /* Editorial section number */
+  .section-number {
+    font-family: "Syne", sans-serif;
+    font-size: clamp(5rem, 12vw, 10rem);
+    font-weight: 900;
+    line-height: 1;
+    color: oklch(0.48 0.22 275 / 0.07);
+    letter-spacing: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* Data stat callout */
+  .stat-number {
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: oklch(0.48 0.22 275);
+    line-height: 1;
+  }
+
+  /* Horizontal rule with label */
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .section-divider::before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: oklch(0.88 0.008 280);
+  }
+  .section-divider-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: oklch(0.48 0.22 275);
+  }
+
+  /* Pull quote */
+  .pull-quote {
+    border-left: 3px solid oklch(0.48 0.22 275);
+    padding-left: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: oklch(0.3 0.02 270);
+    line-height: 1.5;
+  }
+
+  /* Region card */
+  .region-card {
+    background: oklch(1 0 0);
+    border: 1px solid oklch(0.88 0.008 280);
+    transition:
+      border-color 0.2s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  .region-card:hover,
+  .region-card.active {
+    border-color: oklch(0.48 0.22 275);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px oklch(0.48 0.22 275 / 0.12);
+  }
+  .region-card.active {
+    background: oklch(0.96 0.025 275);
+  }
+
+  /* Fade-up animation */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
     }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Console caret blink (ported from the anygame design bundle) */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  .caret-blink {
+    display: inline-block;
+    width: 8px;
+    height: 1.05em;
+    margin-left: 2px;
+    transform: translateY(2px);
+    background: oklch(0.48 0.22 275);
+    animation: blink 1s steps(1) infinite;
+  }
+  .fade-up {
+    animation: fadeUp 0.6s ease forwards;
+  }
+  .fade-up-delay-1 {
+    animation-delay: 0.1s;
+    opacity: 0;
+  }
+  .fade-up-delay-2 {
+    animation-delay: 0.2s;
+    opacity: 0;
+  }
+  .fade-up-delay-3 {
+    animation-delay: 0.3s;
+    opacity: 0;
+  }
+  .fade-up-delay-4 {
+    animation-delay: 0.4s;
+    opacity: 0;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: oklch(0.94 0.004 280);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.8 0.01 280);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.48 0.22 275);
+  }
+
+  .brand-lift-stick {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: brandLift 3.8s ease-in-out infinite;
+  }
+
+  .research-page :is(h1, h2, h3, h4) {
+    font-family: "Syne", "Inter", system-ui, sans-serif;
+    letter-spacing: 0;
+  }
+
+  .atlas-paper {
+    position: relative;
+    isolation: isolate;
+  }
+  .atlas-paper::before,
+  .atlas-paper::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .atlas-paper::before {
+    inset: 5rem 0 auto;
+    height: 1px;
+    background: oklch(0.9 0.01 275);
+  }
+  .atlas-paper::after {
+    top: 0;
+    bottom: 0;
+    left: max(1.5rem, calc((100vw - 1400px) / 2 + 3rem));
+    width: 1px;
+    background: oklch(0.93 0.01 275);
+  }
+
+  /* ── here.now visual kit: figure wrapper + guide lines ── */
+  .fig {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 20px 14px;
+    margin: 28px 0;
+    color: var(--ink);
+  }
+  .fig svg { width: 100%; height: auto; display: block; }
+  .fig figcaption {
+    font-size: 13.5px;
+    color: var(--muted);
+    text-align: center;
+    margin: 10px auto 4px;
+    max-width: 560px;
+    line-height: 1.5;
+  }
+  .fig.bare { background: none; border: none; padding: 0; }
+  .fig.wide { overflow-x: auto; }
+  .fig.wide svg { min-width: 640px; }
+  /* non-scaling-stroke pins guide widths to device px at any scale */
+  .fig .guide { vector-effect: non-scaling-stroke; }
+}
+
+@keyframes brandLift {
+  0%,
+  72%,
+  100% {
+    transform: translate(0, 0);
+  }
+  82% {
+    transform: translate(3px, -5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-lift-stick,
+  .caret-blink,
+  .fade-up {
+    animation: none;
+  }
+  /* fadeUp is what clears the delay classes' resting opacity: 0, so
+     disabling it must restore the end state or the content never appears. */
+  .fade-up-delay-1,
+  .fade-up-delay-2,
+  .fade-up-delay-3,
+  .fade-up-delay-4 {
+    opacity: 1;
+    transform: none;
   }
 }

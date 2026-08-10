@@ -1,0 +1,16 @@
+name = "anygame-newsletter"
+main = "index.js"
+compatibility_date = "2024-04-01"
+account_id = "aa6789c67f992fd0b9f5933e86e11184"
+
+[vars]
+TELEGRAM_CHAT_ID = "2134441104"
+FROM_EMAIL = "newsletter@chefaid.nyc"
+CLOUDFLARE_EMAIL_ACCOUNT_ID = "aa6789c67f992fd0b9f5933e86e11184"
+# ADMIN_TOKEN is a Cloudflare secret — set via `wrangler secret put ADMIN_TOKEN`.
+# Never store it here in plaintext (alongside TELEGRAM_BOT_TOKEN, CLOUDFLARE_EMAIL_API_TOKEN).
+
+[[d1_databases]]
+binding = "SUBSCRIBERS_DB"
+database_name = "anygame_subscribers"
+database_id = "aca2c5ee-b432-4c88-9705-4295f18c145c"

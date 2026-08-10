@@ -1,0 +1,20 @@
+{
+  "topic": "AI in game development",
+  "query_type": "general",
+  "x_handles": [],
+  "x_related": ["karpathy", "tetsuoai", "MengTo", "mattshumer_", "thebuggeddev"],
+  "subreddits": ["gamedev", "godot", "indiedev", "artificial", "LocalLLaMA", "SaaS"],
+  "dedicated_subreddits": ["gamedev", "godot"],
+  "github_users": [],
+  "github_repos": ["godotengine/godot"],
+  "search_terms": [
+    "AI game development 2026",
+    "Three.js AI game dev",
+    "Grok Build game assets",
+    "vibe coded games",
+    "Godot AI workflow",
+    "ephemeral GTA of X karpathy"
+  ],
+  "ranking_keywords": ["three.js", "godot", "grok", "skills", "vibe", "agent", "npc", "procedural", "karpathy", "ephemeral"],
+  "polymarket_keywords": []
+}

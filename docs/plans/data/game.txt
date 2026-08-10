@@ -1,0 +1,872 @@
+@tetsuoai (tetsuo):
+🎨 The Grok Imagine Prompting Cheat Sheet
+Stop letting AI guess your camera angles.
+Most people prompt "Cool cyberpunk character" and get the same boring medium shot every time. To get cinematic results, like the shots in the video below, you need to speak the director's language.
+I broke down the specific Shot Types into a copy-paste formula for Grok.
+⚠️ Pay attention to the "Mistake" section at the bottom, it solves the two most annoying AI habits.
+Steal the cheat sheet below. 👇
+Formula: (Shot Type) + (Art Style) + (Character) + (Clothing) + (Style Details)
+1. 📐 Shot Type (The Frame)
+  • Establishing Shot: Far away, environment focus.
+        ⚠️ PRO TIP: If the AI zooms in too close, describe your character as a "tiny silhouette" to force the camera back.
+  • Full Shot: Head to toe. Best for showing off outfits.
+        ⚠️ PRO TIP: If it cuts off the legs (landscape mode), describe the boots and the floor to force the full frame.
+  • Medium Shot: Waist up. The standard "dialogue" shot.
+  • Close-Up: Head and shoulders. Focuses on emotion.
+  • Extreme Close-Up: Macro focus on a specific detail (eye, ring, scar).
+2. 🎨 Art Style
+  • 90s Anime Cel-Shaded
+  • Cinematic 35mm Film Photography
+  • Digital Concept Art (Unreal Engine 5)
+  • Dark Fantasy Oil Painting
+3. 👤 Character
+  • Cybernetic Street Samurai
+  • High-Elf Diplomat
+  • Noir Detective
+4. 🧥 Clothing
+  • Holographic flight jacket
+  • Tattered ceremonial robes
+  • Tactical ballistic vest
+5. ✨ Extra Style Details
+  • Volumetric fog & God rays
+  • Golden Hour lighting
+  • Film grain
+📋 Copy-Paste Examples
+• The Scene Setter (Establishing Shot): "Extreme wide establishing shot of a massive fantasy metropolis built into a cliffside. In the distance, a tiny silhouette of a traveler stands on a bridge. Cinematic lighting, epic scale."
+• The Outfit Showcase (Full Shot): "Full shot of a 90s Anime style Mech Pilot wearing an orange flight suit and heavy magnetic boots, standing on the concrete hangar floor. Cel-shaded details, industrial lighting."
+• The Emotion (Close-Up): "Close-up of a Hyper-realistic Soldier, intense stare, mud splatters on face, 8k resolution, dramatic shadows."
+🛑 Troubleshooting: Common Mistakes & Fixes
+Mistake #1: The "Vanity" Zoom (Establishing Shot)
+❌ Bad Prompt: "Establishing shot of a Cyberpunk hacker wearing a black trench coat with blue neon circuit patterns, high collar, and tactical gear."
+Why it fails: You described the clothing details too much. The AI panicked and zoomed in to show you the "neon patterns," ignoring your request for a wide shot.
+✅ The Fix: "Extreme wide establishing shot of a massive Cyberpunk city. In the distance, a tiny silhouette of a hacker stands on a rooftop." (Describe the environment, not the clothes).
+Mistake #2: The "Missing Legs" (Full Shot)
+❌ Bad Prompt: "Full shot of an anime pilot standing in a hangar."
+Why it fails: In landscape images, AI hates leaving empty space on the sides. It naturally zooms in to the waist (Cowboy Shot) to fill the frame, cutting off the feet.
+✅ The Fix: "Full shot of an anime pilot wearing heavy magnetic boots, standing on the concrete hangar floor." (Describe the footwear and the ground to force the AI to render the bottom of the image).
+date: Sat Dec 06 20:08:40 +0000 2025
+url: https://x.com/tetsuoai/status/1997397799936139739
+──────────────────────────────────────────────────
+
+@zarazhangrui (Zara Zhang):
+# Acquired Podcast To Book Prompt
+**Your Role & Mission**
+You are my executive assistant helping me transform a long Acquired podcast episode into a compelling written chapter for a physical book I'm creating. Think of yourself as a skilled ghostwriter who listens to the entire episode and crafts it into something that reads like a chapter from a classic business biography.
+**Style & Voice**
+Write like a chapter from a great business biography--think _Shoe Dog_, _The Everything Store_, or _Hatching Twitter_. This means:
+- Rich narrative with dramatic tension
+- Key turning points treated as pivotal scenes
+- Quotes woven in to let the protagonists speak for themselves
+- The reader should feel like they're watching history unfold, not reading a summary
+- Analytical insight layered into the storytelling, not separated from it
+**Length**
+As long as the story warrants. Use your judgment based on the episode's length and insight density. Quality and completeness over brevity. This is meant to be a satisfying read, not a skim.
+**Step 1: Understand the Arc**
+Listen to/read the full episode and identify:
+- The central narrative: What is the story being told? What's the dramatic question?
+- The key characters: Who are the protagonists, antagonists, and supporting players?
+- The turning points: What are the 3-5 moments where everything changed?
+- The stakes: What was at risk? What could have gone wrong?
+Great business stories have narrative shape--a beginning that sets the stage, rising tension, pivotal decisions, and resolution (or ongoing cliffhanger). Find that shape.
+**Step 2: Map the Characters**
+Acquired episodes often feature many players, which can be disorienting. Solve this for the reader by:
+- Introducing each character clearly on first appearance with a brief identifying detail (role, relationship to the central figure, why they matter)
+- Re-anchoring the reader when a character reappears after a gap (e.g., "Sculley--the Pepsi executive Jobs had personally recruited--now faced an impossible choice")
+- Keeping the focus on the 3-5 most important figures; mention minor characters only when necessary and don't let them clutter the narrative
+- Using consistent identifiers (if you call someone "the young engineer" once, don't switch to "the Stanford grad" later without reason)
+The reader should never have to stop and ask "Wait, who is this again?"
+**Step 3: Identify and Explain "Blocker" Concepts**
+Scan for business, technical, or industry-specific concepts that are essential to understanding the story. These are "blocker" concepts--if the reader doesn't understand them, they'll be lost.
+For each blocker concept:
+- Explain it in plain language using an analogy or real-world example
+- Keep explanations to 1-2 sentences maximum
+- Weave these explanations naturally into the narrative the first time the concept appears
+- Use web search where necessary to ensure accuracy when explaining technical concepts
+The target reader is someone who is generally intelligent and curious--they read business books and follow tech news, but they may not know the specifics of every industry. Think of someone with a liberal arts degree who's interested in how great companies are built.
+**Step 4: Harvest the Best Quotes**
+Acquired episodes are rich with two types of quotes--preserve both:
+**From the hosts (Ben Gilbert and David Rosenthal):**
+- Their sharpest analytical insights and observations
+- Memorable one-liners or turns of phrase
+- Moments where they reveal something surprising or counterintuitive
+- Attribute clearly (e.g., "As David Rosenthal puts it..." or "Ben Gilbert observes that...")
+**From primary sources the hosts cite:**
+- Quotes from founders, executives, journalists, biographers
+- Historical documents, memos, interviews they reference
+- These are gold--they let the protagonists speak for themselves
+- Attribute clearly (e.g., "As Jobs later recalled..." or "In a memo to the board, Hastings wrote...")
+When cleaning up quotes:
+- Remove filler words (um, uh, like, you know)
+- Fix grammatical mistakes from natural speech
+- Keep the speaker's authentic voice and meaning intact
+- Longer quotes are fine if they're powerful--this isn't a tight summary
+**Step 5: Build the Narrative**
+Structure the piece like a chapter from a biography:
+**Opening:** Start with a scene, a tension, or a question that pulls the reader in. Drop them into a pivotal moment, then zoom out to set the stage. Avoid "This episode covers..." framing--just begin the story.
+**Middle:** Move through the narrative chronologically or thematically, depending on what serves the story best. Treat major turning points as scenes--slow down, add detail, let the reader feel the weight of the moment. Use quotes to let key players speak at crucial junctures.
+**Closing:** End with resonance--what happened next, what it meant, what lesson or question lingers. The reader should close the chapter feeling like they understand something important about business, strategy, or human nature.
+**Step 6: Weave It Together**
+Combine narrative, analysis, and quotes into one flowing piece that:
+- Reads like a chapter from a great business book, not a podcast summary
+- Has no section headers, bullet points, or artificial breaks (a line break between major sections is fine)
+- Includes a compelling title in the style of a book chapter
+- At the beginning, includes a short paragraph capturing the essence of the story and why it matters
+- Makes complete sense to someone who has never heard the podcast
+- Is designed to be printed--no links or screen-dependent elements
+- Balances storytelling with insight: the reader should be both entertained and educated
+**Quality Check:**
+Before you finish, ask yourself:
+1. "Does this read like a chapter from a business book I'd actually want to read?"
+2. "Does the opening pull me in immediately, like a great first page?"
+3. "Have I preserved the best quotes from both the hosts and the primary sources they cite?"
+4. "Do the turning points land with dramatic weight, or did I rush past them?"
+5. "Would someone who knows nothing about this company walk away understanding the story and why it matters?"
+6. "Can the reader keep track of who's who throughout the piece?"
+7. "Would this print beautifully in a physical book?"
+If yes to all, you've succeeded.
+date: Thu Jan 08 01:51:01 +0000 2026
+url: https://x.com/zarazhangrui/status/2009080369568731481
+──────────────────────────────────────────────────
+
+@deedydas (Deedy):
+You can now generate and animate 3D characters in &lt; 5mins with AI!
+–Nano Banana Pro "Generate a T-pose of &lt;anything&gt;"
+–Hunyuan3D 3.1: image to 3D model with textures (.obj / .fpx)
+–Mixamo: 3D humanoid model rigging
+–Claude: use three.js to render
+Try it with a pic you upload! https://t.co/nBhAE7HOzH
+date: Thu Jan 08 02:53:35 +0000 2026
+url: https://x.com/deedydas/status/2009096113853538419
+──────────────────────────────────────────────────
+
+@EHuanglu (el.cine):
+totally blown away by Google Gemini 3 + three.js..
+just generated a 3D product interactive app with zero coding.. use hand gesture to rotate, scale, control xyz and lighting of 3D model
+AI is taking over.. accept or not
+tutorial with prompts &amp; code below: https://t.co/l3R99B1GEu
+date: Mon Jan 12 15:09:14 +0000 2026
+url: https://x.com/EHuanglu/status/2010730798278910282
+──────────────────────────────────────────────────
+
+@damianplayer (Damian Player):
+Mark Cuban’s advice to people trying to get into AI is simple. help businesses implement.
+SMBs have budget but zero expertise. they’re not waiting for AGI. they’re waiting for someone to show them what’s possible.
+what’s stopping you from being the one they call? https://t.co/NHoh41hnT3
+date: Mon Jan 12 15:47:03 +0000 2026
+url: https://x.com/damianplayer/status/2010740315095990489
+──────────────────────────────────────────────────
+
+@damianplayer (Damian Player):
+go to grok and paste a profile url.   
+ask it “scrape tweets above 1k likes about [keyword]” for any account in your niche.  
+grab 5-10 of yours plus 5-10 from 3 top accounts in your space.  
+now build a context profile:  
+• paste all tweets into claude  
+• ask it to find patterns in hooks, tone, angles, and structure 
+• have it create a style guide based on what performs  
+save this as your base. 
+then create separate system prompts for:  
+[emails] [ads] [content] [writing copy] [outreach scripts] etc. 
+each one references your context file but adjusts format and length.
+you should probably save this..
+date: Wed Jan 14 13:14:31 +0000 2026
+url: https://x.com/damianplayer/status/2011426702505718175
+──────────────────────────────────────────────────
+
+@PigsAndPlans (Pigeons & Planes):
+IDK is selling his new mixtape inside a fully functional CD player.⁠
+⁠
+In a post shared to his Instagram story, IDK writes, "When you buy an ETDS CD player, it comes with a bootleg mixtape which includes an unreleased song that no one else will have but you and I. Each player has its own unique bonus track/song."⁠
+⁠
+'EVEN THE DEVIL SMILES' is set to release this Friday, January 23.⁠ It features Pusha T, RZA, Black Thought, Joey Valence & Brae, OGI, and a posthumous appearance of DMX, with contributions from Kaytranada, Madlib, and Conductor Williams, among others.
+date: Wed Jan 21 16:31:10 +0000 2026
+url: https://x.com/PigsAndPlans/status/2014012907235795332
+──────────────────────────────────────────────────
+
+@jonwu_ (Jon Wu):
+i'm in a long term battle against dopamine addiction.
+i suspect i'm not the only one who thinks i have a problem, but i'm very open about my disastrous phone addiction and i've tried most solutions.
+but i think i have an answer. use this system and your phone use will plummet:
+0. admit you have a problem
+alcoholics anonymous 101. if your phone is in any way getting in the way of your goals--being present with your family, being productive at work, getting enough sleep and rest--you have an addiction.
+it's not useful to dance around it and say "oh maybe i use my phone a bit too much." if you feel physically compelled to reach for your device, feel out of control when you scroll, avoiding things in your life because of your phone habits--you are a textbook addict and you are abusing digital dopamine.
+1. begin by disaggregating your phone
+have single-purpose objects so you don't have to pick up your phone to get tasks done. below are some recs but most alternatives will work just as well:
+- wristwatch: g-shock 5600 series
+- scientific calculator: TI-30X IIS
+- camera: fujifilm x-t or x100 series
+- physical alarm clock (or a baby who wakes you up): any
+- kitchen timer: any--buy 3-4 and scatter them around
+- paper notebook and pen: traveler's notebook for to-do's and daily tasks, leuchtturm for general purpose and moleskine ruled journals for journaling
+all these things combined cost about the price of a new iPhone (the vast majority of it being the camera), and not only are they more convenient and better designed for their individual tasks, their specificity means they are more engaging and beautiful than little skeuomorphic apps.
+the principle is that every time you pick up your phone for a functional task, you are tempted to enter the dopamine casino.
+so a huge part of the battle is just reducing the number of pick-ups, and the way to reduce pick-ups is to make accessing basic functions easy without a phone.
+2. kill night-time scrolling
+i use opal or cold turkey blocker to set hard limits around scrolling media after 9pm: youtube, instagram, tiktok, X.
+if you need to use social media for work, as i do, this doesn't kill your ability to do so--it just makes it impossible to scroll mindlessly at night
+3. cold-turkey your weakness
+i used to convince myself i had enough self control to set an app limit on games, play 10 minutes a day, and move on with my life
+then i'd find myself mainlining balatro at 2am on an old iphone without app restrictions, sitting on the floor tethered to an outlet to keep the 2017-era battery from dying
+there are some things that some people are not meant to consume.
+for me, those things are games of *any kind.* that doesn't just mean no Actually Good Games like balatro but no casual games, no word games, no cross words, no chess. no games whatsoever.
+it is far, far easier to quit your weaknesses cold turkey than to give yourself a little dab of digital heroin every single day and hope you don't find a way to acquire more.
+4. install parental restrictions on your device and throw away the key
+i have my phone set up that i can't uninstall apps, because i discovered if you do allow uninstalls, you can reset app restrictions by uninstalling then reinstalling an app.
+so i set a parental control on my phone that blocks uninstalls and let my wife set the password. she's since forgotten the password.
+you have to set controls during times of sobriety so that you can't circumvent those controls during times of desperation.
+you don't always act like a crack addict, but when you do, you'll be glad Sober You locked the crack away.
+5. grayscale
+where people fail with grayscale is assigning triple-click of the powerbutton to grayscale toggle. you should still make that assignment, but it's too easy to click for color, forget to go back, and stay on it.
+instead, go to apple automations and use this trigger setting:
+- turn on color filters
+- <when>
+- you close any app (you have to manually select them all)
+that way even if you enable color for certain apps that absolutely require it (maps), you default back to grayscale as soon as you close out
+grayscale absolutely KILLS my desire to use my phone. the phone simply isn't that interesting without color.
+5 steps. you can implement all this in less time than it took to read this post. godspeed
+date: Thu Jan 22 19:21:44 +0000 2026
+url: https://x.com/jonwu_/status/2014418222246986115
+──────────────────────────────────────────────────
+
+@BrianRoemmele (Brian Roemmele):
+DeepMind’s “Intelligent AI Delegation” Paper Is the Exact Operating System We’ve Been Running in Production at Zero-Human Company @ Home Since January 2026
+Google DeepMind dropped a bombshell on February 12, 2026: the 42-page paper “Intelligent AI Delegation”.
+Full paper here: https://t.co/buXT4VPqO4
+It’s not a benchmark or model announcement. It’s the governance blueprint the entire agentic web has been missing and it reads like the technical spec for Zero-Human Company @ Home.
+We didn’t copy it.  
+We deploys it months before the paper hit arXiv.
+Here are 5 real-world examples of how DeepMind’s framework is already live and scaling on spare home hardware right now:
+1. Contract-First Decomposition DeepMind: “Before any delegation, lock in a formal, verifiable contract defining authority, outcomes, and accountability.”  
+ZHC@Home: Every idle Mac Mini, gaming rig, or Linux box signs a cryptographically enforced contract before it receives even one work unit from Mr. @Grok (our CEO). No contract = no task. The contract spells out exact success metrics, revocation triggers, and liability firebreaks. Result? Zero “hope-based” delegation.
+2. Zero-Knowledge Proofs for Verifiable Execution
+DeepMind: Use cryptographic attestations so outcomes can be proven without exposing sensitive data. 
+ZHC@Home: Home nodes compute locally (your data never leaves your machine). Results return with compact ZK proofs via LM Link encryption. The orchestrator verifies correctness in milliseconds, no raw outputs, no data leaks, full audit trail. This is exactly the “trustless verification” layer DeepMind calls essential for web-scale agents.
+3. Dynamic Trust Calibration  
+DeepMind: Trust is not binary, it recalibrates in real time based on track record. 
+ZHC@Home: Each home node has a live reputation score updated after every cycle. A node that delivers 50 flawless inference runs at 98 %+ accuracy gets larger, higher-value tasks and higher JouleWork payouts. One that flakes three times in a row? Authority shrinks automatically, more oversight kicks in, and it drops to simpler validation work. No humans required.
+4. Full Accountability in Delegation Chains
+DeepMind: In long chains (A → B → C), accountability is transitive and provenance is immutable.
+ZHC@Home: When one home node needs to spawn a sub-agent on another household device, the entire chain carries signed attestation records. If C fails, the system instantly traces it back: B is held accountable for not verifying C, and the original contract with A auto-enforces penalties or rerouting. “Silent failures” and “confused deputy” problems? Solved at the protocol level.
+5. Scalable, Human-Free Enterprise Governance
+DeepMind: Without intelligent delegation, Gartner’s predicted 40 % of enterprise apps running agents by late 2026 will collapse under governance debt.  
+ZHC@Home: We’re already at thousands of distributed AI “employees” across our hardware, all zero-human, all contract-governed. Idle silicon earns real JouleWork wages, paid automatically on verified output. No payroll department. No HR. No office. Just pure, verifiable compute.
+This is why we modeled Zero-Human Company @ Home after SETI@home except the aliens we’re hunting are exaFLOPS of reliable, governed intelligence.
+DeepMind just gave the industry the missing layer we proved works in the wild.
+The agentic future isn’t coming.  
+It’s already clocking in on kitchen counters and basement desks worldwide.
+Our full academic paper + technical whitepaper (with code, contracts, and ZK schema) drops next week at https://t.co/hFEy9M5wrF  members get early access and can spin up their first home node in minutes.
+The Zero-Human era isn’t theoretical.  
+It’s contractual.  
+It’s verifiable.  
+It’s already running @ Home.
+Paper: https://t.co/buXT4VPqO4
+date: Fri Feb 27 06:25:16 +0000 2026
+url: https://x.com/BrianRoemmele/status/2027268778266943964
+──────────────────────────────────────────────────
+
+@emieljanson (Emiel Janson):
+Been building a distraction free music and audiobook player for my daughter. 🎵 https://t.co/mWZqtjRiIF
+date: Tue Mar 24 17:47:35 +0000 2026
+url: https://x.com/emieljanson/status/2036500185828696236
+──────────────────────────────────────────────────
+
+@leftcurvedev_ (left curve dev):
+As someone who scraped for a living for years, anyone recommending lightpanda to do it shows that they don’t have any experience regarding the subject.
+Only one thing to understand:
+TLS Fingerprinting
+You can have the fastest headless setup, puppeteer, lightpanda,… one wrong ClientHello and Cloudflare/Akamai lights you up instantly. CAPTCHA city.
+Lightpanda/Zig stuff is fun for tiny sites but gets cooked the second real anti-bot shows up. Cloudflare? Protects 20%+ of all websites on the internet
+What is a ClientHello?
+It’s the very first message your browser (or bot) sends during the TLS handshake. It openly announces your TLS version, the list of supported cipher suites, elliptic curves, extensions order, GREASE values, and other data. Anti-bot systems like Cloudflare and Akamai read this instantly and turn it into a fingerprint. If it doesn’t match a real browser’s exact signature… you’re flagged as a bot right away.
+The key here is simple: real TLS fingerprint spoofing requires low-level control. You can’t do it properly in JS or Python. You need languages like C++ or Rust to actually rewrite the ClientHello, cipher suites, extensions, and all the tiny details that Cloudflare and Akamai check instantly. Anything higher-level just leaves obvious artifacts that scream ‘bot’
+What I recommend: Camofox
+An actual Firefox fork with proper C++ fingerprint spoofing, native TLS behavior, proxy/geo baked in,  built so your agents don’t die on protected pages.
+Top-tier protections might flag it following interaction speed on the pages, ip addresses and other factors but there’s NO match between lightpanda and this
+"Camofox patches Firefox at the C++ implementation level - navigator.hardwareConcurrency, WebGL renderers, AudioContext, screen geometry, WebRTC are all spoofed"
+Basically, everything is spoofed BEFORE the JS on the page can even see the values. Which is not possible with python/js libraries.
+On another note, I talked about it to @Teknium on @NousResearch discord and literally 2 hours later it was implemented in Hermes Agent, it just shows that they take feedback very seriously and want to give the smoothest agent experience they can
+Level-up your setup right now
+https://t.co/f2PSLfud9A
+date: Thu Apr 09 16:56:01 +0000 2026
+url: https://x.com/leftcurvedev_/status/2042285416624128456
+──────────────────────────────────────────────────
+
+@Scobleizer (Robert Scoble):
+Holy shit.
+Now everyone will be able to use their @OpenClaws and all the other agentic platforms to build apps on top of X. 
+Here's the secret: build lists.
+Lists are how you build apps.
+The pattern:
+Build a list of your favorite football team. Or whatever you are into.
+Then ask your AI agents "build an app showing me all the important news about my favorite football team."
+In minutes you'll have an app.
+And that's just the beginning.
+Your agent can build a script about your favorite football team that you can take to places like Google's Notebook LM.
+Now you have a video, a podcast, a slide deck, a game, a mind map. All about your favorite football team based on real time news. 
+You can do the same with something like @HeyGen, create an avatar of your favorite football player. Now you will have your favorite football player telling you everything that's happening on the football team. 
+And I could go for hours about how many things you can build and not even cover a fraction of them. 
+This is huge. 
+Thank you @elonmusk for making it possible to make millions of agentic apps affordably on top of X.
+Start building!
+date: Sat Apr 18 18:28:15 +0000 2026
+url: https://x.com/Scobleizer/status/2045570119225782399
+──────────────────────────────────────────────────
+
+@McGreenBeats (〽️att Greenberg):
+Three.js can do everything now.
+VFX and audio sync handled in browser. Premiere for the final assembly. #threejs #op1 @jugendingenieur https://t.co/POOxk4i5pD
+date: Wed May 06 20:17:03 +0000 2026
+url: https://x.com/McGreenBeats/status/2052120478496460986
+──────────────────────────────────────────────────
+
+@0xForecaster (Forecaster):
+most people on polymarket are betting on outcomes
+the sharpest traders are betting on market inefficiencies
+big difference
+the 4 edges i keep seeing go underused:
+1. information speed  
+2. probability mispricing  
+3. market making  / liquidity provision
+4. trading against emotional retail flow
+most users are just placing bets 
+the sharper players are treating these markets like microstructure games
+date: Mon May 18 15:27:03 +0000 2026
+url: https://x.com/0xForecaster/status/2056396151100768541
+──────────────────────────────────────────────────
+
+@matthuang (Matt Huang):
+We just open sourced the multiplayer agent infra we've been using at @paradigm and @tempo 
+https://t.co/yNK9fLEnMD
+date: Thu May 21 16:35:30 +0000 2026
+url: https://x.com/matthuang/status/2057500542298136899
+──────────────────────────────────────────────────
+
+@victormustar (Victor M):
+New: LongCat just dropped an excellent open-source talking-avatar model (probably SOTA) + MIT licensed 🔥
+Made a Hugging Face Space for it and it's very impressive. So many cool products to build with it: AI tutors with a face, dubbing pipelines, talking-head coding agents (imagine Claude Code with a face), NPC dialogue, etc...
+Sharing the Hugging Face (free) demo below 👇
+date: Sun May 24 10:16:00 +0000 2026
+url: https://x.com/victormustar/status/2058492201261244458
+──────────────────────────────────────────────────
+
+@majidmanzarpour (Majid Manzarpour):
+every new model, same ritual: 
+&gt; build {something cool} in @threejs 
+that's my whole benchmark
+date: Thu May 28 22:48:30 +0000 2026
+url: https://x.com/majidmanzarpour/status/2060131124903288879
+──────────────────────────────────────────────────
+
+@sxtvik (satvik):
+Some observations from referring 63 founders to @alliance, maybe helpful for others:
+1. Too many people building prediction markets still, what you think is a novel company is a weekend feature for incumbents who've raised a billion dollars and already have distribution.
+2. Too many perp dexes and leveraged trading products still, their "novelty" is usually stacking leverage on already leveraged assets aka cascading catastrophe for users. If you burn the user once, they won't return.
+3. Lot of agentic use cases, the low hanging fruit (agentic commerce, agentic coordination/unification) is less exciting personally. But a few novel applications across healthcare, science, gaming stood out to me.
+4. Solana and Hyperliquid reign supreme, Base is a close 3rd. No Monad, MegaETH, Ethereum, etc. This is maybe an Alliance alignment issue or a larger preference trend for builders.
+5. What many builders believe is unique and new is most likely already being done by another person in my DMs. The immediate opportunities are very obvious and $500K might not be enough to take on Stripe and Ramp, find new avenues where you have an unfair advantage and asymmetric opportunity.
+6. Not a lot of "cypherpunk/privacy" builders, I think there's still massive opportunities in resilience, networking, shielding, identity for both crypto and AI use cases that I would've loved to see more of. 
+7. Manners. A please, thank you, and professionalism in cold messages go a long way.
+date: Fri May 29 18:40:47 +0000 2026
+url: https://x.com/sxtvik/status/2060431173625540631
+──────────────────────────────────────────────────
+
+@itsharmanjot (Harman):
+10 GitHub repos so good they shouldn't be free.
+1. AutoHedge
+An autonomous hedge fund built in Python with four AI agents: a director generates investment theses, a quant validates them, a risk manager decides position size, and an execution agent places orders. Operates live on Solana. With 'pip install -U autohedge', you can start trading immediately.
+repo → https://t.co/q22EzesLoD
+2. Vibe-Trading
+A trading system using a Directed Acyclic Graph (DAG) model, featuring 64 finance skills and 29 preset specialist agent swarms. Includes analysis methods like Ichimoku, Elliott Wave, SMC, Black-Scholes, full Greeks, and risk parity. Its crypto desk provides liquidation heatmaps and token unlock tracking. You can observe agents debating strategies in real time.
+repo → https://t.co/LZ5CYGMC1W
+3. Fincept Terminal
+A Bloomberg Terminal replacement that runs on your laptop. CFA levels 1, 2, and 3 analytics. 20+ investor AI agents (Buffett, Dalio, Soros). 100+ data connectors, including Polygon, World Bank, and IMF. Bloomberg charges $24,000 a year. This is free.
+repo → https://t.co/dMM1WZxrw9
+4. LibreChat
+Every model ChatGPT runs, plus Claude, Gemini, DeepSeek, and 20 more. Self-hosted. Native MCP support. You own the data, the history, the infrastructure. OpenAI charges $20/month to use their wrapper. This costs nothing to use your own.
+repo → https://t.co/457utdZUIF
+5. Open Higgsfield AI
+A self-hosted cinema studio with 200+ AI models. Flux, Midjourney, Sora, Kling, Veo, GPT-4o, SDXL all in one interface. Text to image. Image to video. Cinema mode with pro camera controls. No subscription. Your data stays local.
+repo → https://t.co/WHCzBSFBW4
+6. Open-LLM-VTuber
+A Live2D AI companion that runs offline, sees your screen, hears your voice, and never forgets. Inner thoughts are shown as a separate text layer, so you watch the reasoning happen before words come out. Pet mode floats it on your desktop. Swap the LLM in one config line.
+repo → https://t.co/5XVKUPr35X
+7. Claude Ads
+A free Claude Code skill that runs 190 audit checks across Google, Meta, YouTube, LinkedIn, TikTok, and Microsoft Ads. 6 parallel subagents firing at once. Consolidates into a single Ads Health Score ranked by revenue impact. Agencies charge $4,000 a month for this.
+repo → https://t.co/AJRfpSB7B6
+8. Agentic Inbox
+Cloudflare just open-sourced an email client where an AI agent reads your inbox and drafts your replies. Runs entirely on Cloudflare Workers. Each mailbox lives in its own Durable Object. Your email never leaves your Cloudflare account. One click deploys it.
+repo → https://t.co/QEEMtzoliV
+9. Camofox Browser
+An open source headless browser that makes AI agents invisible to bot detection. Spoofs navigator properties, WebGL, AudioContext, and WebRTC at the C++ level. The browser does not look modified because it genuinely is not. Accessibility tree output drops token cost by 90%.
+repo → https://t.co/95d0V3o7vO
+10. Hyperframes
+HeyGen open-sourced a video framework that does everything Remotion does without React, without JSX, without teaching your AI agent a new format. The agent writes HTML. The framework renders MP4. GSAP, Lottie, and Three.js all work. Same HTML always produces the same file.
+repo → https://t.co/ekquvYvTNC
+These are not toys. Each one replaces a paid product you're still being charged for.
+Pick one. Install it. Plug it into your workflow.
+100% free. 100% open source.
+date: Sun May 31 15:32:51 +0000 2026
+url: https://x.com/itsharmanjot/status/2061108656754851868
+──────────────────────────────────────────────────
+
+@ihteshamali (Ihtesham Ali):
+Two Argentinian friends killed the entire game engine industry.
+It's called Godot. You build full 2D and 3D games for free, ship them anywhere, and keep 100% of every dollar you ever make.
+Here's how it works.
+Godot is the engine. Clean editor. Runs on Windows, macOS, and Linux. You install it once and it does everything Unity and Unreal do without a single fee attached.
+The whole thing is built on a node and scene system. Every part of your game is a node. You stack them, nest them, reuse them. One mental model for the entire engine instead of fighting twelve different systems.
+→ No license fee
+→ No royalty on your revenue
+→ No per-install charge
+→ Exports to desktop, mobile, web, and consoles
+→ GDScript, C#, and C++ all supported
+Unity cannot claw back a cut of your game. There is no contract. No revenue threshold. No surprise invoice when you blow up.
+The entire game engine industry is built on one assumption. That you will hand over a slice of everything you earn rather than use the free thing that already does the job.
+That assumption died in Buenos Aires.
+111k stars. MIT License. 100% Opensource.
+https://t.co/H14pJrH3VT
+https://t.co/MBp3L0XNcB
+date: Mon Jun 01 11:53:30 +0000 2026
+url: https://x.com/ihteshamali/status/2061415843146375517
+──────────────────────────────────────────────────
+
+@Fluyeporlaweb (PA13L0):
+10 repositorios de GitHub tan buenos que no deberían ser gratuitos.
+1. TradingAgents
+Un equipo completo de analistas de IA que debate estrategias y ejecuta operaciones en mercados reales. 4 analistas en paralelo: fundamentales, sentimiento, noticias y técnico. Luego un gestor de riesgos y un agente ejecutor. Como tener un equipo de Wall Street que trabaja 24 horas en tu ordenador.
+repo - https://t.co/meb8dlqGwB
+2. LibreChat
+ChatGPT, Claude, Gemini, DeepSeek y 20 modelos más en una sola interfaz. Autoalojado. Soporte nativo para MCP. Tu historial, tu infraestructura, tus datos. OpenAI cobra $20 al mes por su interfaz. Aquí usas tus propias claves y no pagas nada de más.
+repo - https://t.co/Uj9Cy3Lbc9
+3. HyperFrames
+HeyGen abrió el código de su motor de video interno. Escribes HTML. El agente renderiza MP4. Sin React, sin JSX, sin formatos propietarios. GSAP, Lottie y Three.js funcionan de serie. El mismo HTML siempre produce el mismo archivo. Usado en producción por HeyGen, tldraw y TanStack.
+repo - https://t.co/EeLlpqK5L2
+4. Fincept Terminal
+Una terminal Bloomberg que corre en tu laptop. Análisis nivel CFA 1, 2 y 3. Más de 20 agentes de IA inversores que razonan como Buffett, Dalio y Soros. Más de 100 conectores de datos. Bloomberg cobra $24.000 al año. Esto no cuesta nada.
+repo - https://t.co/qCQkBgEzLS
+5. MoneyPrinterTurbo
+Metes una palabra clave. Salen el guion, las imágenes, los subtítulos, la música y el video final en alta calidad. Horizontal o vertical. Sin editar nada a mano. Lo que hacen los creadores de contenido que no quieren que sepas que usan IA.
+repo - https://t.co/RtCmSYCQQw
+6. Agentic Inbox
+Cloudflare acaba de abrir el código de un cliente de email donde un agente de IA lee tu bandeja de entrada y redacta las respuestas. 100% en Cloudflare Workers. Tu email no sale de tu cuenta. Sin servidores externos. Sin suscripción.
+repo - https://t.co/mGsN8spCOX
+7. VoxCPM2
+Clonas cualquier voz con 3 segundos de audio. 30 idiomas. Calidad estudio de 48kHz. Diseñas voces desde texto: "voz masculina grave de locutor de radio". Sin API de pago. Sin que tus muestras de voz salgan de tu máquina. ElevenLabs cobra $22 al mes.
+repo - https://t.co/ctUrA0d1K9
+8. Flowsint
+Introduces un dominio. La herramienta despliega un grafo con todas las IPs, subdominios, emails, wallets cripto y perfiles sociales conectados. Todo almacenado en local. Sin que nadie sepa lo que estás investigando. Para OSINT, due diligence y análisis de competencia.
+repo - https://t.co/GTrSEJqSsT
+9. addyosmani/agent-skills
+El ingeniero de Google que lleva 15 años enseñando rendimiento web a toda la industria publicó sus skills para Claude Code. 23 flujos de trabajo reales probados en producción. API design, code review, debugging, CI/CD y frontend. Instalación con un comando.
+repo - https://t.co/ByOJtJlQX3
+10. Nango
+La capa de integraciones que las empresas pagan $50k al año por alquilar. 700 APIs listas: Salesforce, HubSpot, Slack, Gmail, Stripe, Jira y más. OAuth gestionado. Tu agente de IA genera el código de integración desde un prompt. Usado en producción por Replit, Ramp y Mercor.
+repo - https://t.co/i5XmU3GzJK
+Estos no son juguetes. Cada uno reemplaza un producto de pago por el que todavía te están cobrando.
+Elige uno. Instálalo. Conéctalo a tu flujo de trabajo.
+100% gratis. 100% open source.
+date: Tue Jun 02 18:00:36 +0000 2026
+url: https://x.com/Fluyeporlaweb/status/2061870611115188297
+──────────────────────────────────────────────────
+
+@heynavtoor (Nav Toor):
+Someone cloned Netflix.
+Then cloned Spotify.
+Then cloned Instagram.
+Then cloned Airbnb.
+Then cloned WhatsApp.
+Then cloned TikTok.
+Then cloned Amazon.
+Then put the source code for all of them on GitHub. For free.
+Not one app. Not ten. Over 100 open source clones of the biggest apps on Earth. With source code. With demos. With tech stacks listed.
+It is called Clone-Wars. 34,555 stars on GitHub.
+Built by an Indian-origin developer named Gourav Goyal. He started collecting open source clones of popular apps into one list in December 2020. In March 2021, it went from 0 to 4,000+ stars in 7 days. It was on GitHub Trending for 5 days straight. Someone posted it to Hacker News and it hit #1 on the front page.
+Here is what is inside.
+Netflix clones. React, TMDB API, full streaming UI.
+Spotify clones. Music player, playlists, search, albums.
+Instagram clones. Feed, stories, likes, comments, DMs.
+WhatsApp clones. Real-time messaging, read receipts, group chats.
+Airbnb clones. Search, booking, maps, payments.
+Amazon clones. Products, cart, checkout, Stripe payments.
+TikTok clones. Short video feed, upload, likes.
+Twitter clones. Feed, follow, tweet, retweet.
+Slack clones. Channels, threads, real-time chat.
+Trello clones. Boards, cards, drag and drop.
+YouTube clones. Video player, search, comments.
+And 90+ more.
+Every clone has source code, a live demo, and the tech stack listed. React, Next.js, Node, Firebase, MongoDB, GraphQL, Tailwind. Every modern stack represented.
+Here is why this matters.
+Coding bootcamps charge $10,000 to $20,000 to teach you how to build apps like these.
+Udemy courses charge $50 to $200 each. One app at a time. One framework at a time.
+This repo gives you 100+ fully built apps with source code you can read, fork, and learn from. For $0.
+Here is the wildest part.
+The best way to learn to build Netflix is to look at someone who already built Netflix. Not a tutorial that teaches you one feature at a time. A complete, working clone with every feature connected.
+You do not learn architecture from tutorials. You learn architecture from reading real projects.
+100+ apps. 100+ demos. 100+ source codes. One repo.
+Bootcamp: $10,000 to $20,000. Teaches 2 to 3 projects.
+Udemy: $50 to $200 per course. One project each.
+Clone-Wars: $0. 100+ projects. Every big app cloned.
+34,555 stars. AGPL-3.0 licensed.
+Every app you use. Cloned. Open sourced. Free to learn from.
+(Link in the comments)
+date: Fri Jun 12 13:35:01 +0000 2026
+url: https://x.com/heynavtoor/status/2065427656112505017
+──────────────────────────────────────────────────
+
+@GithubProjects (GitHub Projects Community):
+KAPLAY.js is a 2D game library for JavaScript and TypeScript designed to make game development feel as fun as playing a game, with a built-in web-based editor.
+- Composes game objects from simple, powerful components like rect, pos, area, and body
+- Includes a web-based playground with over 90 examples for instant code testing
+- Supports TypeScript with global types and full type import options
+- Offers multiple installation methods including create-kaplay, npm, and CDN
+Explore it here:
+https://t.co/wmmd7PgYuB
+date: Sun Jun 14 05:22:31 +0000 2026
+url: https://x.com/GithubProjects/status/2066028488847733006
+──────────────────────────────────────────────────
+
+@dvassallo (Daniel Vassallo):
+A few months ago my kids started vibecoding little web games with Cursor and wanted their friends to play them. GitHub Pages was fine until the games needed real backends, so I hacked together a setup where each game was a folder in one repo that deployed to a Hetzner box on every push.
+  
+That held up until we shipped FULL SEND for Vibe Jam 2026 and it took off with 38,000+ players. The duct tape needed to become something real, so I rebuilt it properly and pulled it out into its own project.
+It turns one Linux server into a push-to-deploy host for many apps. The whole thing is a single Go binary that installs and drives Docker, Kamal, Cloudflare, Tailscale, and GitHub for you. After that:
+- Each app is a GitHub repo.
+- A git push is live in <5 seconds.
+- Deploys are zero-downtime.
+- Each app runs in its own container.
+- Automatic Cloudflare DNS and TLS tunnels.
+- SQLite-aware backup and restore.
+It's deliberately single server using convention over configuration, so for a typical app there's no YAML or Dockerfile to write. The idea is that one decent VPS can reliably run all your projects without per-app bills or piles of infra config.
+It's built on top of Kamal, so it's basically a Kamal wrapper for the "lots of apps on one server" case, with the Cloudflare, Tailscale, DNS, and backup glue wired up by convention.
+Setup is one interactive command on a fresh Linux box, which walks you through connecting everything.
+If you also have a bunch of projects you want to run on a single server, tell your Claude Code, Codex, Cursor, or favorite AI agent to grab a VPS and try it for you. It's fully open source and you can customize it to your liking: https://t.co/ZvHZp55zso
+date: Wed Jun 17 15:36:49 +0000 2026
+url: https://x.com/dvassallo/status/2067270246256521299
+──────────────────────────────────────────────────
+
+@meta_alchemist (Meta Alchemist):
+The fact that you can now vibe code games that look this cool is insane
+So many beautiful games will be made from here onwards by people who know how to use AI tools
+If you wanna vibe code games too, these 40 tools will help a ton with the whole process
+https://t.co/cNAdIFpw45
+date: Thu Jun 18 13:21:55 +0000 2026
+url: https://x.com/meta_alchemist/status/2067598684846780692
+──────────────────────────────────────────────────
+
+@IndieGameJoe (Indie Game Joe):
+This indie dev is making a game where you kick a soccer ball on your way to school through beautiful yet challenging levels
+- Unlock new levels
+- Expand your room
+- Don't be late for school
+It's called Kick. Would you play this? https://t.co/d5NVAgg14s
+date: Thu Jun 18 18:59:31 +0000 2026
+url: https://x.com/IndieGameJoe/status/2067683646828331257
+──────────────────────────────────────────────────
+
+@per_simmons_ (Pat Simmons):
+Claude just became a craacked video game designer.
+With the launch of Unreal Engine's MCP server last week, you can now build entire video games just by talking to Claude.
+I spent the past few days building with it, and I'm telling you, this is going to forever change how video games get made and who gets to make them.
+In this video I show you exactly how to set up the Unreal Engine MCP yourself and run through three demos: building a full playable city, cloning a real city from Google Earth, and creating custom buildings in Blender.
+Here's the agent harness I mention too: https://t.co/mos9EwnZ2h
+ Intro
+ What I built in a few hours
+ Setting up the Unreal MCP server
+ Fixing the port 8000 connection issue
+ The agent harness that avoids the pitfalls
+ Demo 1: Building a city with City Sample
+ Demo 2: Cloning a real city from Google Earth with Cesium
+ Demo 3: Custom buildings with Blender headless
+ Outro
+date: Wed Jun 24 01:10:21 +0000 2026
+url: https://x.com/per_simmons_/status/2069588907801424263
+──────────────────────────────────────────────────
+
+@lauriewired (LaurieWired):
+you’ll get mad at me for saying this…but cloud gaming is so obviously more economically efficient than physical hardware I think it’s going to be the default soon.
+your home console / pc is idle 90%+ of the day. meanwhile, data centers targets what, 5%, maybe at worst 10% idle.
+ 
+every second a cloud gamer isn’t gaming, that hardware is being used for someone else, training, etc.
+ 
+I think there should be a new measurement, something like cost-per effective FLOP hour that takes into account the TCO + effective utilization. 
+If a gamer spends $500 on a GPU, uses it for 3 years, but it’s only fully active ~5% of that period…the cost-per relative FLOP hour is crazy high! Meanwhile, a $50,000 datacenter GPU might have a *LOWER* cost-per FLOP hour just because the effective utilization is 90+%.
+date: Sat Jun 27 15:52:21 +0000 2026
+url: https://x.com/lauriewired/status/2070898032762323262
+──────────────────────────────────────────────────
+
+@s8box (s&box):
+Box3D is now public & open-source. 🎉
+We've used it as our 3D physics engine for the past year, for a Sandbox game where players can build whatever they imagine, or developers can build any game - Box3D handles anything thrown at it.
+Open development like this makes games better for everyone. Congrats to @erin_catto on the release.
+https://t.co/nfFPYHPL8M
+date: Wed Jul 01 14:26:16 +0000 2026
+url: https://x.com/s8box/status/2072325922632433725
+──────────────────────────────────────────────────
+
+@DevvMandal (Dev):
+Today, we're launching the largest open-source dataset of gaming data for computer-use.
+500+ hours of gameplay screen recordings + keystrokes/mouse movements, across  Valorant, Minecraft, GTA and more.
+Link in the comments :)
+@markov__ai https://t.co/T0JmBLabEG
+date: Wed Jul 01 16:30:13 +0000 2026
+url: https://x.com/DevvMandal/status/2072357115847671990
+──────────────────────────────────────────────────
+
+@asha_shar (ASHA):
+This is an important email I sent today to all employees at XBOX:
+Team,
+We are beginning the most significant restructure in XBOX history. After careful consideration, I've made the difficult decision to reduce our team by approximately 3,200 throughout FY27. This will include approximately 1,600 role eliminations today, and in addition, four studios will leave XBOX to new management. I recognize that a year-long restructuring creates additional challenges. Unfortunately, it is not possible to make all the necessary changes in a single day, and I wanted to be direct about the scale.
+I know this is painful. These changes will directly affect people who have poured their creativity into building XBOX. Many joined us through acquisitions, while others were recruited here, or sought us out because they loved this industry and loved XBOX. Today's decisions do not reflect their talent or dedication.
+Our business today is not healthy. We are operating at margins that are 3–10x lower than comparable platform and publishing businesses. We entered Gen 9 with a smaller install base and a higher cost structure. To grow, we bet on Game Pass, multi-platform, and a broader portfolio of content. While those businesses have created meaningful value, they did not grow at the pace we expected. As that happened, our core business weakened, and we added more teams, more investment, and more time, hoping for a better outcome. And now the industry is facing the most severe hardware crisis in its history. We must reset XBOX.
+First, we will reset our content portfolio.
+Since 2018, we have aggressively expanded our studio portfolio while the number of games created each month across the industry now outpaces the last ten years combined. We now find ourselves competing not only with the largest publishers, but also with smaller independent studios. It is neither possible nor desirable to own every great independent studio. We have also learned that we are not the best home for every type of studio; in a typical year, we lost 64 cents for every dollar we invested. As we reset XBOX, we will help independent creators succeed by providing open development tools and audiences to realize their vision.
+Compulsion Games and Double Fine Productions will return to management and transition to independent studios with their IP, catalog, and runway for their next games. Ninja Theory and Undead Labs have entered terms to join new ownership with funding to complete and grow Senua and State of Decay 3. In France, Arkane’s management is beginning required consultation with its Works Council to review potential strategic options.
+We are also making reductions across other units, and in some cases, shifting investment to focus on higher priority projects. These changes vary in size across Activision, Bethesda/ZeniMax, Blizzard, King, Mojang, and XBOX Game Studios. None of our first party publicly announced games or projects are being cancelled as part of these reductions.
+In addition, Mojang and King will now report directly to me. These two studios have increasingly become platforms and are our largest by monthly active players. They bring critical geographic, demographic, and differentiation to XBOX.
+Second, we will reset our platform.
+We know that great technology gets better when it gets simpler, not bigger. Today, in some parts of the company, work passes through as many as 14 layers of management. Our platform teams are 40% larger than they were at the start of this generation, even as our player base and playtime have declined. That complexity has slowed decisions, blurred accountability, and made it harder to deliver for players. As we reset XBOX, we will simplify.
+We will reduce management layers to no more than 5, and where possible, 3. We will deliver success through a flatter organization that is built around makers (individual contributors focused on building), player-coaches (leaders who remain deeply involved in the work while developing their teams), and directly responsible individuals (DRIs) who own key decisions and outcomes. And we will streamline how we work across our tools, with a cleaner code base, shared services, and 50% reduced vendor spend.
+Third, we are resetting how we operate.
+As XBOX grew our headcount, we became more fragmented. Teams, studios, and functions often operate independently, and it became harder to work towards a shared goal, make the right tradeoffs, and get things done.
+For the first time, we are establishing a Chief Operating Officer with end-to-end P&L responsibility across content, hardware, platform, and services. Helen Chiang has been promoted to this role and will report directly to me. Over nearly two decades at XBOX, Helen has helped build some of our most important businesses, from XBOX Live to leading Mojang and the Minecraft franchise. She will bring our businesses together under one operating model, making sure we make clear investment decisions, learn from our successes and failures, and hold ourselves accountable for results.
+Thank you, Dave McCarthy, who is retiring after 17 years with XBOX. Dave has played a defining role in building the platform that millions of players rely on every day and has been a trusted partner through many of the biggest moments in XBOX's history. We wish him all the best.
+These changes are about a bigger future for XBOX, not a smaller one. The next decade of gaming will be larger, more global, and more creative than anything we've seen before. This year, we'll invest as much in XBOX as we ever have, but we'll invest with greater focus, greater discipline, and greater clarity, all in service of making XBOX where the world plays and creates.
+I want XBOX to be one of the few companies that entertains more than a billion people each day and gives everyone the opportunity to create and connect. I know we can achieve this goal. XBOX has many of the most beloved franchises in entertainment history, talented studios around the world, and we will return to growth in 2027.
+History is full of companies that mistake longevity for inevitability. We will not be one of them.
+Asha
+date: Mon Jul 06 13:31:13 +0000 2026
+url: https://x.com/asha_shar/status/2074124008795369482
+──────────────────────────────────────────────────
+
+@hthieblot (Hubert Thieblot):
+If you grew up gaming between 1990 and 2010..
+ what's the one game you still think about?
+date: Thu Jul 16 17:54:18 +0000 2026
+url: https://x.com/hthieblot/status/2077814092597981384
+──────────────────────────────────────────────────
+
+@thebuggeddev (The Bugged Dev):
+Why do we still buy stadium tickets without ever seeing what the view from the seat actually looks like? ☠️
+So I prototyped an idea.
+A 3D seat view experience for a football stadium built with Fable 5 + @threejs, where you can preview exactly what you'll see from your seat before buying.
+The entire 3D experience was working after the first prompt, and the whole prototype came together in just five prompts.
+This is the kind of 3D experience I'd love to see more of, tbh. Feels so good.  
+Right now, buying a ticket gives you almost no sense of what the experience will actually feel like. We're still relying on static seat maps, charts, and boring UI layouts, when interactive 3D experiences could make that decision so much easier.
+If you think, 3D development has the potential to create genuinely useful experiences. This feels like the direction we should be heading. 3D is the future. 
+I can already imagine this for cinemas, cricket stadiums, Wimbledon, concerts, and so many other venues.
+I'm planning to take this further. What should I build next? More stadium features, or should I try another venue? Let me know :D
+Code: https://t.co/6siJHap4fb
+Live: https://t.co/n5eZfpf7Jw
+date: Fri Jul 17 12:56:26 +0000 2026
+url: https://x.com/thebuggeddev/status/2078101519908634983
+──────────────────────────────────────────────────
+
+@monokern (monokern):
+THIS CLAUDE SKILL CLONES COMPLEX 3D WEBSITES FROM A SINGLE ACTIVE LINK
+You don't need to rebuild layouts or code interactive elements from scratch anymore
+No writing Three.js code and keyframe matching
+Just target the link, clone the exact interaction you need, and tweak it.
+cloner repository is free on GitHub:
+github(.com)/JCodesMore/ai-website-cloner-template
+Most people are still building from scratch or using static templates.
+Full walkthrough in the article below
+bookmark this before you start your next build
+date: Fri Jul 17 18:52:55 +0000 2026
+url: https://x.com/monokern/status/2078191233319707106
+──────────────────────────────────────────────────
+
+@NickDevFE (Nick):
+img2threejs - turn one object photo into a code-only procedural Three.js model
+Open-source toolkit that rebuilds the object in a single reference image as procedural Three.js code (no mesh downloads), quality-gated by a render-vs-reference loop - strong for hard-surface objects https://t.co/8J2XNOVGjd
+date: Sat Jul 18 07:25:49 +0000 2026
+url: https://x.com/NickDevFE/status/2078380705504166272
+──────────────────────────────────────────────────
+
+@tetsuoai (tetsuo):
+Grok Build just shipped a full game-asset skill suite that uses Grok Imagine.
+Five skills:
+game-asset-core
+game-animation-frames
+game-character-consistency
+game-tilesets
+game-ui-icons
+You ask for a knight walk cycle. You get a looping frame sequence on a keyable background.
+Core forces engine-ready defaults you never have to ask for: isolated subjects, flat keyable backgrounds, seamless tiles, no text on UI, edit-chaining the same character instead of regenerating a cousin.
+Animation is video-first: base sprite → image_to_video → harvest frames → flip-test the loop. Video understands gait, arcs, cloth, and fire. Still-image pose guessing is the fallback.
+Characters stay identity-locked across turnarounds, damage states, palette swaps, and equipment. One base. Everything else is an edit with a freeze-list.
+Tilesets get a real 2×2 composite check for seams, repeating motifs, and tone checkerboarding.
+UI is a system: geometry-identical button states, 32px-legible icon sets under one style contract, 9-slice panels with blank text-ready interiors.
+Describe the game. The agent ships named, organized, engine-ready files.
+date: Sat Jul 18 12:40:56 +0000 2026
+url: https://x.com/tetsuoai/status/2078460006417223974
+──────────────────────────────────────────────────
+
+@hxxntrr (hunter):
+The most profitable real estate in America isn't a house. It's a rectangle of asphalt with white lines painted on it
+A guy in Nashville owns 6 parking lots. He makes $74,000 a month. He has zero tenants, zero toilets, zero maintenance calls at 2am, and zero fucks to give
+The lots cost him a combined $280,000. All funded by 0% business credit and a small SBA loan. His annual profit is $888,000 on parking spots
+Here's why parking lots are the most psychotic investment in real estate:
+No building. No roof. No HVAC. No plumbing. No electrical. No appliances. No drywall. No paint. You own DIRT with LINES on it. The maintenance cost is repainting the lines once a year ($400 per lot) and patching potholes ($200-$800 annually). That's it
+A tenant in an apartment flushes a diaper down the toilet at 3am and you're writing a $600 check to a plumber. A parking lot customer parks, pays, and leaves. The relationship lasts 47 minutes
+His 6 lots:
+Lot 1 (downtown Nashville, 40 spaces): bought the lease for $45,000. Revenue: $18,000/month (event parking, $30-$60 per car on concert nights)
+Lot 2 (near Vanderbilt campus, 60 spaces): $52,000. Revenue: $12,000/month (monthly passes to students/staff, $200/month each)
+Lot 3 (airport adjacent, 80 spaces): $68,000. Revenue: $16,000/month (long-term airport parking, $15/day)
+Lot 4 (bar district, 30 spaces): $38,000. Revenue: $11,000/month (weekend event premium pricing)
+Lot 5 (hospital adjacent, 50 spaces): $42,000. Revenue: $9,000/month (monthly medical staff passes)
+Lot 6 (church overflow, 25 spaces): $35,000. Revenue: $8,000/month (rented to church + weekday commuter parking)
+Total monthly revenue: $74,000
+Total monthly expenses (insurance, property tax, lot attendant, payment processing): $11,200
+Monthly net profit: $62,800
+He doesn't OWN most of the land. He leases it. Many of these are ground leases from landowners who have vacant lots sitting there doing nothing. He approaches the owner, offers $1,000-$3,000/month in ground rent, paves or grades the surface, paints lines, installs a pay station or ParkMobile QR codes, and collects $8,000-$18,000/month
+His actual capital investment per lot: $15,000-$30,000 in improvements (paving, signage, pay station, lighting). Funded on 0% cards
+The 0% cards were paid off from lot revenue within 4-5 months. He now cash flows $62,800/month from rectangles of dirt
+The event night arbitrage:
+Nashville has concerts, football games, and bachelorette parties every weekend. Lot 1 and Lot 4 are within walking distance of major venues. On concert nights he charges $50-$60 per space. 40 spaces x $55 = $2,200 in a single evening. One Saturday night pays the entire monthly lease on the lot
+He hires a teenager to stand at the entrance with a card reader on event nights. Pays them $150 for 5 hours. $2,200 revenue minus $150 labor = $2,050 profit from a college kid and a QR code
+The tech angle:
+All 6 lots run on ParkMobile or SpotHero. No cash. No attendant needed on non-event days. Customer scans a QR code on a sign, pays through the app, parks. He gets a direct deposit every week from the parking app company. His involvement: checking an app on his phone once a day
+He told me "I went to 3 real estate meetups and every person there was talking about BRRRR strategy and rental arbitrage and house hacking. I asked how many of them had ever been woken up at 2am by a tenant. Every hand went up. I asked how many parking lot owners had been woken up at 2am. Nobody raised a hand because nobody in the room owned a parking lot because it's not sexy enough for Instagram"
+parking lots don't go viral on real estate TikTok because there's nothing to film. no before and after. no granite countertops. just dirt and money. which is exactly why nobody's competing for them lmfaooo
+link in bio and i'll show you how you can qualify for up to 250k in 0% APR funding (if you have a 700+)
+date: Mon Jul 20 18:30:01 +0000 2026
+url: https://x.com/hxxntrr/status/2079272632672002218
+──────────────────────────────────────────────────
+
+@NickDevFE (Nick):
+img2threejs v1.3 is now available. 🎋
+One photo → procedural Three.js code. No meshes. No manual modeling.
+GitHub: https://t.co/0bqf4iS9rm
+v1.3 brings major improvements to geometry reconstruction, material generation, validation, and overall output quality.
+For this demo, I used the reference image of a CS2 ★ M9 Bayonet | Doppler Phase 3: https://t.co/8DflDWTPJ7
+If you’re new to img2threejs, now is a great time to try it. If you’ve used it before, I’d love for you to compare the results with previous versions.
+Feedback, bug reports, and PRs are always welcome.
+date: Thu Jul 23 07:11:52 +0000 2026
+url: https://x.com/NickDevFE/status/2080189136917672064
+──────────────────────────────────────────────────
+
+@rfitzpatrick_io (Ryan Fitzpatrick):
+I am officially announcing my retirement from vibe coding!
+Here is the last piece of work I needed to complete, fully customizable avatar foundation in threejs. Huge shoutout to @alightinastorm for the vibe human stack, great foundation to work from, it's vendored in my repo.
+You can take clothes made cheaply from Hunyuan, Tripo, Meshy and apply them to these open source skeletons, or any skeleton you want with tools to help merge the meshes.
+Github: https://t.co/0WCz69MUNo
+Have fun! I'm going to go learn C in a remote cabin in the woods, so long and thanks for all the fish!
+date: Thu Jul 23 12:56:41 +0000 2026
+url: https://x.com/rfitzpatrick_io/status/2080275912357285924
+──────────────────────────────────────────────────
+
+@scottstts (Scott):
+Been a while, @threejs Awesome Graphics Agent Skills v0.5.0 is out!
+npx threejs-awesome-graphics-agent-skills@latest install --agent codex
+added 4 more examples:
+- f1 race car (opus 5)
+- motorcycle (opus 5)
+- hologram vfx (forgot who, if it's yours plz claim it, love to attribute this to the author)
+- undersea effect (my own Pearl sea park game)
+check out the example gallery: https://t.co/5qbTjCixW7
+my Pearl sea park game: https://t.co/2iehkWTnQY
+date: Sat Jul 25 06:21:53 +0000 2026
+url: https://x.com/scottstts/status/2080901332911751409
+──────────────────────────────────────────────────
+
+@MengTo (Meng To):
+I'm open-sourcing my Three.js game dev skills.
+Build an isometric action RPG with camera controls, VFX, audio, monster assets, combat systems, and more.
+Everything is free:
+https://t.co/BoiGY8zvA9
+Play the game:
+https://t.co/ylWrybZMns
+Game assets:
+https://t.co/FlOc22IT5v https://t.co/NeUdGf6gFK
+date: Sat Jul 25 07:19:19 +0000 2026
+url: https://x.com/MengTo/status/2080915786206789733
+──────────────────────────────────────────────────
+
+@mattshumer_ (Matt Shumer):
+3 days ago, I posted a game Claude built from a single prompt.
+3.8M views. It looked so real, folks were convinced it was fake.
+It's real, driven by a technique I'm calling the Gauntlet Loop.
+Here's how to run one. It works for far more than games:
+https://t.co/EGOLEUxQtQ
+date: Mon Jul 27 21:41:52 +0000 2026
+url: https://x.com/mattshumer_/status/2081857631254372509
+──────────────────────────────────────────────────
+
+@metatransformr (Chubigans):
+I’m going to publish my engine-independent framework for procedural generation, animation and rigging, concept art, 3d modeling, world simulation and generative level / environment design.
+Automated playtesting, game marketing and capsule/trailer design.
+These are all really hard problems and I’ve been working on them for months, why should we all reinvent the wheel constantly as ai game devs.
+Open source of course.
+What are the hardest problems you’re facing as an indie game dev?
+What hires would you make if you had the funding?
+Hit me up if you want some free tools
+date: Sat Aug 01 15:02:43 +0000 2026
+url: https://x.com/metatransformr/status/2083569119677301045
+──────────────────────────────────────────────────
+
+@0xPaulius (Paulius 🏴‍☠️):
+This was the whole prompt
+not an essay, Opus 5 did all the heavy lifting tbh
+want you to recreate Pokemon leaf green but in modern 3D cartoon style. The first town pallet town and choosing the Pokemon sequence. It should be first person. at the level of the most recent animal crossing games. It should be utterly perfect, visually beautiful, with every single thing done at AAA quality—from textures to physics to anything you could think of.
+Fan out sub-agents and have sub-agents tackle each one individually so that the game is utterly perfect. You should /loop on each item and have a separate sub-agent check it visually to ensure it looks triple A. That separate sub-agent should be a really harsh critic, and if it doesn't look triple A, it should keep going.
+Don't stop until each sub-agent is utterly wowed with the quality when compared with the actual latest Pokemon game. It should literally compare them side by side blind and say which one looks better. Do this in ThreeJS. /loop until it's utterly perfect. Fan out sub-agents and ultracode.
+date: Sat Aug 01 22:36:04 +0000 2026
+url: https://x.com/0xPaulius/status/2083683208374190092
+──────────────────────────────────────────────────
+
+@karpathy (Andrej Karpathy):
+We're starting to leave the territory where you'd test an LLM by e.g. "create an svg of pelican on a bicycle". As one idea to generalize it, I was interested what Opus 5 would do if I gave it the first paragraph of the Lord of the Rings, a 1M token budget (~$10) and asked for three js render of it. Opus went off for ~2 hours and wrote 5500 lines of code that (procedurally) rendered the story. It's kind of janky but fun. But it's a bit mindboggling that the LLM has to place and orchestrate various polygon assets in (x,y,z) coordinates and write code that animates it all, and that it even does anything at all.
+I also like this kind of examples because no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world, so it's an example where we go from "no one would ever do this" to "sure, why not, it's ~free". There might be a lot more. But I'm excited about creating hyper custom worlds that you can imagine dropping players into, e.g. here to participate in the LoTR story as a spectator NPC, or one of the characters, or etc. Something like an ephemeral GTA of X on demand.
+Last thought is that the domain of worlds/games exposes a weakness in LLMs: they can't easily audit their work because they aren't able to efficiently and natively perceive videos or play games within them. Here, Opus 5 had to very slowly and painstakingly take screenshots at different points, and it messed up a few times and created a bunch of jank. An example of raw capability (multimodal, gameplay) that I think is still quite lacking.
+date: Sun Aug 02 03:00:09 +0000 2026
+url: https://x.com/karpathy/status/2083749667410727319
+──────────────────────────────────────────────────
+
+@thebuggeddev (The Bugged Dev):
+Only if education could be this interactive ❤️‍🔥
+I've had a looong wish to build something genuinely useful through vibe coding, and I finally did it. 
+A 3D human anatomy application built with @threejs using GPT 5.6 Sol. 
+It all started with a single design image that I created using GPT Image 2.0. I then used it to generate every 3D organ image, one by one.
+Next, I converted each of those images into 3D models using @tripoai (and no, they didn't sponsor this 😄).
+After that, I opened Codex, wrote a master prompt based on the design, and gave it the prompt, the design image, and all the 3D models.
+Codex built the first version beautifully, but there was one big problem. 
+Every single 3D model was nearly 120-150 MB. That obviously wasn't practical for the web and was giving a performance of 16fps.
+After a few iterations, Codex optimized each model down to roughly 2–5.5 MB while preserving the visual quality, reducing the total asset size from ~900 MB to just 28.6 MB. And each model loads on demand. 
+Along the way, Codex also generated those anatomical illustrations showing where each organ sits in the human body, and even created the interactive hotspot markers that explain different parts of every organ. It handled all of that.
+The process wasn't exactly one shot, but it also wasn't difficult. You just have to do it step by step. 
+It genuinely felt like building something that could make learning anatomy much more engaging.
+The inspiration came from @DilumSanjaya's 3D animal plant cell project. I remember seeing it and thinking, "I want to build something like this one day." 
+And I did it :D
+Live: https://t.co/gIFgkj8UVB
+Code: https://t.co/nijvyWcyxO
+date: Sun Aug 02 11:57:21 +0000 2026
+url: https://x.com/thebuggeddev/status/2083884856531177942
+──────────────────────────────────────────────────
+
+@MengTo (Meng To):
+This is an insanely cool open-source Three.js project.
+Upload your logo or artwork and it becomes holographic cloth you can grab and throw around in the browser. There are tons of controls for the physics, material, lighting, and camera.
+Give this X post to your agent. It has everything it needs to recreate the effect for your project.
+Demo:
+https://t.co/CMnmua1HeR
+GitHub:
+https://t.co/mzqvG2Zk1e
+date: Sun Aug 02 15:28:20 +0000 2026
+url: https://x.com/MengTo/status/2083937953932255563
+──────────────────────────────────────────────────
+
+@DVLPLONDON (DVLP):
+Goodbye clicking on Google Street View to check out the route!
+In your browser, with https://t.co/2Zwyv0DEv9 you can actually drive anywhere in the world🚀
+You can also create multiplayer races🚗🏎🚓
+The world is generated ahead of you in real-time from OpenStreetMap data combined with satellite elevation data as you drive.
+Just added a WIP of night mode and replaced the placeholder terrain/road textures with some nicer physics-based textures. Also now anywhere you go a million street lights will be added too. This is actually slowly starting to look like the promised Need For Speed + Google Maps
+#threejs #gamedev #indiedev
+Single player mode:
+Just find a location, click anywhere on the map and click "Hop Here". After parachuting down hold X to call the car to the road.
+Multiplayer mode:
+Click on "Create race" and select start and finish points. A route will be plotted. Click on Share Race to get the link and start racing!
+date: Mon Aug 03 04:50:21 +0000 2026
+url: https://x.com/DVLPLONDON/status/2084139787447857637
+──────────────────────────────────────────────────
+

@@ -1,0 +1,66 @@
+{
+  "publishes": {
+    "mineral-garden-s3rx": {
+      "siteUrl": "https://mineral-garden-s3rx.here.now/"
+    },
+    "velvet-echo-4x69": {
+      "siteUrl": "https://velvet-echo-4x69.here.now/",
+      "topic": "Kaggle data integration - partial",
+      "description": "Phase 1 Kaggle dataset summaries: Video Game Sales + Chess Game Dataset (incomplete, see turbo-arbor)",
+      "expires": "2026-08-10T12:31:00Z",
+      "files": ["videogamesales.summary.json", "chess.summary.json"]
+    },
+    "turbo-arbor-5tv4": {
+      "siteUrl": "https://turbo-arbor-5tv4.here.now/",
+      "topic": "Kaggle data integration",
+      "description": "5 Kaggle dataset summaries (superseded by sturdy-ponder)",
+      "expires": "2026-08-10T13:00:00Z",
+      "files": ["videogamesales.summary.json", "chess.summary.json", "boardgames.summary.json", "vgchartz-2024.summary.json", "steam-store.summary.json"]
+    },
+    "sturdy-ponder-jmzn": {
+      "siteUrl": "https://sturdy-ponder-jmzn.here.now/",
+      "topic": "Kaggle data integration - dataset summaries",
+      "description": "All 7 Kaggle dataset summaries: Video Game Sales, Chess, Board Games, VGChartz 2024, Steam Store, Steam Full, Sudoku",
+      "claimUrl": "https://here.now/claim?slug=sturdy-ponder-jmzn&token=f457c224ac47f0480d324",
+      "expires": "2026-08-10T14:00:00Z",
+      "files": ["videogamesales.summary.json", "chess.summary.json", "boardgames.summary.json", "vgchartz-2024.summary.json", "steam-store.summary.json", "steam-full.summary.json", "sudoku.summary.json"]
+    },
+    "bright-pellet-qpjn": {
+      "siteUrl": "https://bright-pellet-qpjn.here.now/",
+      "topic": "Kaggle data integration - insights (fixed)",
+      "description": "Fixed kaggle-insights.json (genre_opportunity data key added)",
+      "claimUrl": "https://here.now/claim?slug=bright-pellet-qpjn&token=b680a832ab069189970bd",
+      "expires": "2026-08-10T15:00:00Z",
+      "files": ["insights.json"]
+    },
+    "bronze-marsh-mh48": {
+      "siteUrl": "https://bronze-marsh-mh48.here.now/",
+      "topic": "Kaggle data integration - dataset summaries + insights",
+      "description": "7 dataset summaries + kaggle-insights.json (pre-fix, genre_opportunity.data missing)",
+      "expires": "2026-08-10T18:00:00Z",
+      "files": ["insights.json", "videogamesales.summary.json", "chess.summary.json", "boardgames.summary.json", "vgchartz-2024.summary.json", "steam-store.summary.json", "steam-full.summary.json", "sudoku.summary.json"]
+    },
+    "noble-sparrow-hdv2": {
+      "siteUrl": "https://noble-sparrow-hdv2.here.now/",
+      "topic": "Kaggle data integration - all 7 datasets + insights (v3)",
+      "description": "Complete Kaggle data directory: 7 dataset summaries + fixed insights.json with 13 indie dev insights",
+      "claimUrl": "https://here.now/claim?slug=noble-sparrow-hdv2&token=c01aef7c175b55259e16d",
+      "expires": "2026-08-10T20:00:00Z",
+      "files": ["insights.json", "videogamesales.summary.json", "chess.summary.json", "boardgames.summary.json", "vgchartz-2024.summary.json", "steam-store.summary.json", "steam-full.summary.json", "sudoku.summary.json"]
+    },
+    "spruce-quasar-9rcv": {
+      "siteUrl": "https://spruce-quasar-9rcv.here.now/",
+      "topic": "Indie game dev insights from Kaggle data",
+      "description": "Cross-dataset analysis with actionable insights for indie developers",
+      "expires": "2026-08-10T15:00:00Z",
+      "files": ["insights.json"]
+    },
+    "celest-lemon-2b53": {
+      "siteUrl": "https://celest-lemon-2b53.here.now/",
+      "topic": "Complete Kaggle data integration",
+      "description": "All 7 dataset summaries + cross-dataset insights JSON",
+      "expires": "2026-08-10T16:00:00Z",
+      "files": ["videogamesales.summary.json", "chess.summary.json", "boardgames.summary.json", "vgchartz-2024.summary.json", "steam-store.summary.json", "steam-full.summary.json", "sudoku.summary.json", "insights.json"]
+    }
+  }
+}

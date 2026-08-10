@@ -1,0 +1,15 @@
+<!-- Favicon variant of the pick-up-sticks mark, simplified for 16-32px.
+     The full six-stick mark with its outline ring is in PickUpSticksMark
+     (client/src/components/brand.tsx) and is only legible at large sizes;
+     here the ring is dropped (a thin circle crossed by a diagonal reads as a
+     prohibition sign) and the stroke count is cut so each stick survives
+     rasterisation to a couple of pixels. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="26" fill="#ffffff"/>
+  <g stroke-linecap="round" stroke-width="17">
+    <line x1="22" y1="84" x2="86" y2="46" stroke="#e56d55"/>
+    <line x1="26" y1="46" x2="86" y2="86" stroke="#2f8f70"/>
+    <line x1="20" y1="62" x2="92" y2="66" stroke="#c1a43b"/>
+  </g>
+  <line x1="72" y1="34" x2="104" y2="18" stroke="#5844d8" stroke-width="16" stroke-linecap="round"/>
+</svg>

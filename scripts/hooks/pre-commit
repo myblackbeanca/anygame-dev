@@ -1,0 +1,89 @@
+#!/usr/bin/env bash
+# Block commits whose author cannot be resolved to a real GitHub user.
+#
+# Why: Vercel refuses to build a commit it cannot attribute to a GitHub account.
+# Such deploys land as state=BLOCKED at 0ms with no build logs, while GitHub
+# Actions stays green — so the failure is easy to misread as a billing or abuse
+# problem. It has already cost this repo five blocked production deploys
+# (adc12dd, 376055c, 8cab330, 30c13da) authored `Pi <pi@anygame.dev>`, plus
+# three earlier commits authored `Manus <dev-agent@manus.ai>`.
+#
+# The repo's git config has always been correct. Coding agents override the
+# author per-commit with `--author` / `-c user.email=`, which is why this must
+# check the EFFECTIVE author rather than `git config user.email`.
+#
+# Enable (once per clone):
+#   git config core.hooksPath scripts/hooks
+#
+# Bypass for a single commit (use sparingly, deploy will likely be BLOCKED):
+#   ALLOW_UNVERIFIED_AUTHOR=1 git commit ...
+
+set -u
+
+# Effective author for the commit about to be created — honours --author,
+# -c user.email, and the GIT_AUTHOR_* environment variables.
+author_ident="$(git var GIT_AUTHOR_IDENT)"
+author_email="$(printf '%s' "${author_ident}" | sed -n 's/.*<\(.*\)>.*/\1/p')"
+author_name="$(printf '%s' "${author_ident}" | sed -n 's/^\(.*\) <.*/\1/p')"
+
+if [[ "${ALLOW_UNVERIFIED_AUTHOR:-0}" == "1" ]]; then
+  echo "pre-commit: author check bypassed for ${author_name} <${author_email}>" >&2
+  exit 0
+fi
+
+# Author policy: explicit allowlist, plus GitHub noreply addresses as a class.
+#
+# Chosen over a denylist because this repo is effectively single-operator with
+# coding agents doing the committing. A denylist only ever catches agent
+# identities we have already been burned by, and each new agent invents its own
+# address — exactly the case that must fail closed. The cost of the strict rule
+# (editing this list when a real collaborator joins) is near zero here.
+#
+# Known-good — every READY deploy on this repo carries one of these:
+#   hello@collectivewin.ca                              (aletviegas / Alet Viegas)
+#   159792879+collectivewinca@users.noreply.github.com  (collectivewinca)
+#
+# Known-bad — every BLOCKED deploy carries one of these:
+#   pi@anygame.dev      (Pi)
+#   dev-agent@manus.ai  (Manus)
+ALLOWED_AUTHOR_EMAILS=(
+  "hello@collectivewin.ca"
+)
+
+author_is_allowed() {
+  local allowed
+
+  # GitHub noreply addresses are issued by GitHub and always resolve to a real
+  # account, so accept the whole class rather than enumerating every collaborator.
+  case "${author_email}" in
+    *@users.noreply.github.com) return 0 ;;
+  esac
+
+  for allowed in "${ALLOWED_AUTHOR_EMAILS[@]}"; do
+    if [[ "${author_email}" == "${allowed}" ]]; then
+      return 0
+    fi
+  done
+
+  return 1
+}
+
+if ! author_is_allowed; then
+  cat >&2 <<EOF
+
+  ✗ Commit blocked: author "${author_name} <${author_email}>" is not an
+    identity Vercel can resolve to a GitHub user.
+
+    Vercel would accept this commit and then mark the deploy BLOCKED at 0ms
+    with no build logs. Commit with a real identity instead:
+
+      git -c user.name="aletviegas" -c user.email="hello@collectivewin.ca" commit ...
+
+    If you are certain this address maps to a GitHub account, add it to
+    author_is_allowed() in scripts/hooks/pre-commit.
+
+EOF
+  exit 1
+fi
+
+exit 0
